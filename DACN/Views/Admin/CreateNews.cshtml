@@ -1,0 +1,133 @@
+﻿@model DACN.Models.TINTUC
+
+@{
+    ViewBag.Title = "CreateNews";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+
+    <!-- Main Content -->
+    <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+            <h5 class="m-0 font-weight-bold text-primary" style="position:relative; left:45%">Tạo bài viết</h5>
+        </nav>
+        <!-- End of Topbar -->
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+            <!-- DataTales Example -->
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.TieuDe, "Tiêu đề", htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.TieuDe, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.TieuDe, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.NoiDung, "Nội dung", htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.NoiDung, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.NoiDung, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                      
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Truycap,"Truy cập", htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Truycap, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Truycap, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.HinhTT, "Hình bài viết", htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.HinhTT, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.HinhTT, "", new { @class = "text-danger" })
+                                <p> </p>
+                                <input type="button" id="btnUpload" value="Chọn" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" />
+                                <input type="file" name="fileUpload" id="fileUpload" accept="image/*"
+                                       style="display:none;" />
+                                <img src="@Model.HinhTT" height="200px" width="120px" id="pictureUpload" />
+                            </div>
+                            @section upload
+                            {
+                                <script>
+                                    $(function () {
+                                        $('#btnUpload').click(function () {
+                                            $('#fileUpload').trigger('click');
+                                        });
+                                    });
+                                    $('#fileUpload').change(function () {
+                                        if (window.FormData !== undefined) {
+                                            var fileUpload = $('#fileUpload').get(0);
+                                            var files = fileUpload.files;
+                                            var formData = new FormData();
+                                            formData.append('file', files[0]);
+                                            $.ajax(
+                                                {
+                                                    type: 'POST',
+                                                    url: '/Admin/ProcessUpload',
+                                                    contentType: false,
+                                                    processData: false,
+                                                    data: formData,
+                                                    success: function (urlImage) {
+                                                        $('#pictureUpload').attr('src', urlImage);
+                                                        $('#HinhTT').val(urlImage);
+
+                                                    },
+                                                    error: function (err) {
+                                                        alert('Error ', err.statusText);
+                                                    }
+                                                });
+                                        }
+                                    });
+                                </script>
+                            }
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Tạo bài viết" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" />
+                            </div>
+                        </div>
+                    </div>
+                    }
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- End of Main Content -->
+    <!-- Footer -->
+    <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+</div>
+<!-- End of Content Wrapper -->
+
+
+
+

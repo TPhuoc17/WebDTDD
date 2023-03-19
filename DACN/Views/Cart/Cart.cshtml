@@ -1,0 +1,113 @@
+﻿@model IEnumerable<DACN.Models.Giohang>
+@using DACN.Models
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+    TAIKHOAN tk = (TAIKHOAN)Session["TaiKhoan"];
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    
+    <title>Giỏ hàng</title>
+    <meta charset="utf-8">
+    <!--add responsive layout support-->
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--meta info-->
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--include favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="~/Content/template/images/fav.png">
+    <!--fonts include-->
+    <link href='~/Content/template/http://fonts.googleapis.com/css?family=Source+Sans+Pro:900|Lato:400,300italic,300,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='~/Content/template/http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic,300,300italic,400,400italic,600,600italic,900,900italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!--stylesheet include-->
+    <link rel="stylesheet" type="text/css" media="all" href="~/Content/template/plugins/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="~/Content/template/plugins/jackbox/css/jackbox.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="~/Content/template/css/animate.css">
+    <link rel="stylesheet" type="text/css" media="all" href="~/Content/template/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="~/Content/template/css/style.css">
+    <!--[if lte IE 10]>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+    <!--head libs-->
+    <!--[if lte IE 8]>
+        <style>
+            #preloader{display:none !important;}
+        </style>
+    <![endif]-->
+    <script src="~/Content/template/js/jquery-2.1.1.min.js"></script>
+    <script src="~/Content/template/js/modernizr.js"></script>
+</head>
+
+<!--breadcrumbs-->
+<div class="breadcrumbs bg_grey_light_2 fs_medium fw_light">
+    <div class="container color_dark">
+        <a href="@Url.Action("HomePage", "Pages")" class="sc_hover">Trang chủ</a> / <span class="color_light">Giỏ hàng</span>
+    </div>
+</div>
+<!--main content-->
+<div class="page_section_offset">
+    <div class="container numbered_title_init">
+        <h2 class="fw_light second_font color_dark m_bottom_27 tt_uppercase">Giỏ hàng</h2>
+      
+        <table class="w_full shopping_cart_table m_bottom_38 m_xs_bottom_30">
+            <table class="w_full shopping_cart_table m_bottom_38 m_xs_bottom_30">
+                <thead class="d_xs_none">
+                    <tr class="bg_grey_light_2 second_font">
+                        <th><b>Hình ảnh</b></th>
+                        <th><b>Tên sản phẩm</b></th>
+                        <th style="display: none"><b>Mã loại</b></th>
+                        <th><b>Giá</b></th>
+                        <th><b>Số lượng</b></th>
+                        <th><b>Thành tiền</b></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td data-cell-title="Product Image"><img src="@item.hinh" class="w_full" alt=""></td>
+                            <td data-cell-title="Product Name">
+                                <a href="#" class="sc_hover second_font fs_large d_inline_b m_bottom_4">@item.tensp - @item.bonho</a>
+                            </td>
+                            <td data-cell-title="SKU" class="second_font" style="display: none"></td>
+                            @using (Html.BeginForm("CapnhatGiohang", "Cart", new { @id = item.idsp }))
+                            {
+                                <td data-cell-title="Price" class="second_font">@String.Format("{0:0,0đ}", item.gia.Value)</td>
+
+                                <td data-cell-title="Quantity">
+                                    <div class="quantity clearfix t_align_c">
+                                        <button class="f_left d_block minus black_hover tr_all">&#45;</button>
+                                        <input type="text" class="f_left color_light" readonly name="txtSoLg" value="@item.sl">
+                                        <button class="f_left d_block black_hover tr_all">&#43;</button>
+                                    </div>
+                                </td>
+                                <td data-cell-title="Total" class="second_font"><b class="color_dark">@String.Format("{0:0,0đ}", item.thanhtien.Value)</b></td>
+
+                                <td class="t_align_c">
+                                    <a href="@Url.Action("XoaGioHang", "Cart", new { @id = item.idsp})" class="button_type_8 black_hover grey state_2 m_xs_bottom_0 tr_all color_dark t_align_c vc_child m_bottom_5"><i class="fa fa-times fs_large d_inline_m"></i></a><br class="d_xs_none">
+                                </td>
+                            }
+                        </tr>
+                    }
+
+                </tbody>
+                <tfoot>
+                    <tr class="bg_grey_light_2">
+                        <td colspan="7">
+                            <a href="@Url.Action("Offline", "Cart")" class="button_type_2 d_block tt_uppercase fs_medium second_font f_left tr_all f_xs_none t_align_c m_xs_bottom_5 lbrown state_2"><span class="d_inline_b m_left_10 m_right_10">&emsp; Giao dịch trực tiếp&emsp;</span></a>
+                            <a href="@Url.Action("Order", "Cart")" class="button_type_2 d_block tt_uppercase f_left f_xs_none t_align_c m_xs_bottom_5 green state_2 tr_all second_font fs_medium"><span class="d_inline_b m_left_10 m_right_10">&emsp; Thanh toán MoMo&emsp;</span></a>
+                            <a href="@Url.Action("XoaTatCaGioHang", "Cart")"><button class="button_type_2 tt_uppercase fs_medium second_font f_right tr_all t_align_c f_xs_none w_xs_full grey state_2"><span class="d_inline_b m_left_10 m_right_10">Xóa tất cả</span></button></a>
+                        </td>
+                        
+                    </tr>
+                </tfoot>
+
+            </table>
+        </table>
+        </div>     
+</div>

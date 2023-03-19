@@ -1,0 +1,333 @@
+﻿@model PagedList.IPagedList<DACN.Models.SANPHAM>
+@using PagedList.Mvc;
+@using DACN.Models
+
+@{
+    ViewBag.Title = "Price3";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+    TAIKHOAN kh = (TAIKHOAN)Session["TaiKhoan"];
+}
+
+<head>
+    <!--libs include-->
+    <script src="~/Content/template/plugins/jquery-ui.min.js"></script>
+    <script src="~/Content/template/plugins/isotope.pkgd.min.js"></script>
+    <script src="~/Content/template/plugins/jquery.appear.js"></script>
+    <script src="~/Content/template/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="~/Content/template/plugins/twitter/jquery.tweet.min.js"></script>
+    <script src="~/Content/template/plugins/flickr.js"></script>
+    <script src="~/Content/template/plugins/afterresize.min.js"></script>
+    <script src="~/Content/template/plugins/jackbox/js/jackbox-packed.min.js"></script>
+    <script src="~/Content/template/plugins/jquery.elevateZoom-3.0.8.min.js"></script>
+    <script src="~/Content/template/plugins/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid="></script>
+    <script src="~/Content/template/js/retina.min.js"></script>
+    <script src="~/Content/template/plugins/colorpicker/colorpicker.js"></script>
+    <script src="~/Content/template/js/styleswitcher.js"></script>
+
+    <!--theme initializer-->
+    <script src="~/Content/template/js/themeCore.js"></script>
+    <script src="~/Content/template/js/theme.js"></script>
+
+    <![endif]-->
+    <script src="~/Content/template/js/jquery-2.1.1.min.js"></script>
+    <script src="~/Content/template/js/modernizr.js"></script>
+</head>
+
+<title>Giá</title>
+
+<!--breadcrumbs-->
+<div class="breadcrumbs bg_grey_light_2 fs_medium fw_light">
+    <div class="container">
+        <a href="@Url.Action("HomePage", "Pages")" class="sc_hover">Trang chủ</a>  <span class="color_dark">/</span> <a class="sc_hover">Sản phẩm từ 10-20 triệu</a>
+    </div>
+</div>
+<!--main content-->
+<div class="page_section_offset">
+    <div class="container">
+        <div class="row">
+            <aside class="col-lg-3 col-md-3 col-sm-3 m_xs_bottom_30 p_top_4">
+                <!--filter widget-->
+                <section class="m_bottom_38 m_xs_bottom_30" style="display:none">
+                    <h5 class="color_dark tt_uppercase second_font fw_light m_bottom_13">Filter</h5>
+                    <hr class="divider_bg m_bottom_23">
+                    <form>
+                        <div class="relative">
+                            <fieldset>
+                                <legend class="second_font m_bottom_10 w_full"><b>Manufacturers</b></legend>
+                                <ul>
+                                    <li class="m_bottom_9">
+                                        <input type="checkbox" name="" id="checkbox_1">
+                                        <label for="checkbox_1" class="fw_light fs_">Chanel</label>
+                                    </li>
+                                    <li class="m_bottom_9">
+                                        <input type="checkbox" name="" id="checkbox_2" checked>
+                                        <label for="checkbox_2" class="fw_light fs_">Calvin Klein</label>
+                                    </li>
+                                    <li class="m_bottom_15">
+                                        <input type="checkbox" name="" id="checkbox_3">
+                                        <label for="checkbox_3" class="fw_light fs_">Prada</label>
+                                    </li>
+                                </ul>
+                                <span class="close fieldset_c hidden fs_small color_light tr_all color_dark_hover fw_light">x</span>
+                                <hr class="divider_light m_bottom_10">
+                            </fieldset>
+                        </div>
+                        <div class="relative">
+                            <fieldset>
+                                <legend class="second_font m_bottom_15 w_full"><b>Price</b></legend>
+                                <div class="range_slider relative bg_grey_light_2 m_bottom_10"></div>
+                                <div class="clearfix m_bottom_10">
+                                    <input type="text" class="f_left range_min half_column fw_light" readonly>
+                                    <input type="text" class="f_right range_max half_column t_align_r fw_light" readonly>
+                                </div>
+                                <span class="close fieldset_c hidden fs_small color_light tr_all color_dark_hover fw_light">x</span>
+                                <hr class="divider_light m_bottom_10">
+                            </fieldset>
+                        </div>
+                        <div class="relative">
+                            <fieldset>
+                                <legend class="second_font m_bottom_10 w_full"><b>Size</b></legend>
+                                <ul>
+                                    <li class="m_bottom_9">
+                                        <input type="radio" id="radio_1" name="size"><label for="radio_1" class="d_inline_b fw_light p_top_0 p_bottom_0">S</label>
+                                    </li>
+                                    <li class="m_bottom_9">
+                                        <input type="radio" id="radio_2" name="size" checked><label for="radio_2" class="d_inline_b fw_light p_top_0 p_bottom_0">M</label>
+                                    </li>
+                                    <li class="m_bottom_15">
+                                        <input type="radio" id="radio_3" name="size"><label for="radio_3" class="d_inline_b fw_light p_top_0 p_bottom_0">L</label>
+                                    </li>
+                                </ul>
+                                <span class="close fieldset_c hidden fs_small color_light tr_all color_dark_hover fw_light">x</span>
+                                <hr class="divider_light m_bottom_10">
+                            </fieldset>
+                        </div>
+                        <div class="relative">
+                            <fieldset>
+                                <legend class="second_font m_bottom_10 w_full"><b>Color</b></legend>
+                                <ul class="hr_list m_bottom_12">
+                                    <li class="m_right_5 m_bottom_3"><button class="color_button bg_light_red tr_all"></button></li>
+                                    <li class="m_right_5 m_bottom_3"><button class="color_button bg_light_blue tr_all"></button></li>
+                                    <li class="m_right_5 m_bottom_3"><button class="color_button bg_light_green tr_all"></button></li>
+                                    <li class="m_right_5 m_bottom_3"><button class="color_button bg_grey tr_all"></button></li>
+                                    <li class="m_right_5 m_bottom_3"><button class="color_button bg_light_yellow tr_all"></button></li>
+                                </ul>
+                                <span class="close fieldset_c hidden fs_small color_light tr_all color_dark_hover fw_light">x</span>
+                                <hr class="divider_light m_bottom_10">
+                            </fieldset>
+                        </div>
+                        <div class="relative m_bottom_15">
+                            <fieldset>
+                                <legend class="second_font m_bottom_10 w_full"><b>Weight</b></legend>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 m_xs_bottom_10">
+                                        <input type="text" class="w_full fs_medium tr_all filter_input">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <input type="text" class="w_full fs_medium tr_all filter_input">
+                                    </div>
+                                </div>
+                                <span class="close fieldset_c hidden fs_small color_light tr_all color_dark_hover fw_light">x</span>
+                            </fieldset>
+                        </div>
+                        <button type="reset" class="button_type_2 d_block w_full t_align_c grey state_2 tr_all second_font fs_medium tt_uppercase filter_reset"><i class="fa fa-refresh d_inline_m m_right_9 fs_"></i>Reset</button>
+                    </form>
+                </section>
+                <!--categories widget-->
+                <section class="m_bottom_30" style="display:none">
+                    <h5 class="color_dark tt_uppercase second_font fw_light m_bottom_13">Categories</h5>
+                    <hr class="divider_bg m_bottom_23">
+                    <ul class="categories_list second_font w_break">
+                        <li class="relative">
+                            <a href="#" class="fs_large_0 d_inline_b">Living Rooms</a><button class="open_sub_categories fs_medium"></button>
+                            <!--second level-->
+                            <ul class="d_none">
+                                <li class="relative"><a href="#" class="tr_delay d_inline_b">Beds</a></li>
+                                <li class="relative">
+                                    <a href="#" class="tr_delay d_inline_b">Dressers/Chests</a><button class="open_sub_categories fs_medium"></button>
+                                    <!--third level-->
+                                    <ul class="d_none fs_small categories_third_level_list">
+                                        <li><a href="#" class="tr_delay sc_hover bg_grey_light_2_hover">King Beds</a></li>
+                                        <li><a href="#" class="sc_hover bg_grey_light_2_hover">Queen Beds</a></li>
+                                    </ul>
+                                </li>
+                                <li class="relative"><a href="#" class="tr_delay d_inline_b">Nightstands</a></li>
+                            </ul>
+                        </li>
+                        <li class="relative">
+                            <a href="#" class="fs_large_0 d_inline_b fw_bold">Bedrooms</a><button class="open_sub_categories fs_medium active"></button>
+                            <!--second level-->
+                            <ul>
+                                <li class="relative">
+                                    <a href="#" class="tr_delay d_inline_b fw_bold">Beds</a><button class="open_sub_categories fs_medium active"></button>
+                                    <!--third level-->
+                                    <ul class="fs_small categories_third_level_list">
+                                        <li><a href="#" class="tr_delay sc_hover bg_grey_light_2_hover">King Beds</a></li>
+                                        <li><a href="#" class="sc_hover bg_grey_light_2_hover">Queen Beds</a></li>
+                                    </ul>
+                                </li>
+                                <li class="relative"><a href="#" class="tr_delay d_inline_b">Dressers/Chests</a></li>
+                                <li class="relative"><a href="#" class="tr_delay d_inline_b">Nightstands</a></li>
+                            </ul>
+                        </li>
+                        <li class="relative">
+                            <a href="#" class="fs_large_0 d_inline_b">Dining Rooms</a><button class="open_sub_categories fs_medium"></button>
+                            <!--second level-->
+                            <ul class="d_none">
+                                <li class="relative"><a href="#" class="tr_delay d_inline_b">Beds</a></li>
+                                <li class="relative"><a href="#" class="tr_delay d_inline_b">Dressers/Chests</a></li>
+                                <li class="relative"><a href="#" class="tr_delay d_inline_b">Nightstands</a></li>
+                            </ul>
+                        </li>
+                        <li class="relative">
+                            <a href="#" class="fs_large_0 d_inline_b">Kids Rooms</a><button class="open_sub_categories fs_medium"></button>
+                            <!--second level-->
+                            <ul class="d_none">
+                                <li class="relative"><a href="#" class="tr_delay d_inline_b">Beds</a></li>
+                                <li class="relative"><a href="#" class="tr_delay d_inline_b">Dressers/Chests</a></li>
+                                <li class="relative"><a href="#" class="tr_delay d_inline_b">Nightstands</a></li>
+                            </ul>
+                        </li>
+                        <li class="relative">
+                            <a href="#" class="fs_large_0 d_inline_b">New</a><button class="open_sub_categories fs_medium"></button>
+                            <!--second level-->
+                            <ul class="d_none">
+                                <li class="relative"><a href="#" class="tr_delay d_inline_b">Beds</a></li>
+                                <li class="relative"><a href="#" class="tr_delay d_inline_b">Dressers/Chests</a></li>
+                                <li class="relative"><a href="#" class="tr_delay d_inline_b">Nightstands</a></li>
+                            </ul>
+                        </li>
+                        <li class="relative">
+                            <a href="#" class="fs_large_0 d_inline_b">Sale</a><button class="open_sub_categories fs_medium"></button>
+                            <!--second level-->
+                            <ul class="d_none">
+                                <li class="relative"><a href="#" class="tr_delay d_inline_b">Beds</a></li>
+                                <li class="relative"><a href="#" class="tr_delay d_inline_b">Dressers/Chests</a></li>
+                                <li class="relative"><a href="#" class="tr_delay d_inline_b">Nightstands</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+            <main class="col-lg-9 col-md-9 col-sm-9 m_bottom_30 m_xs_bottom_10">
+                <div class="d_table w_full m_bottom_5">
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 d_xs_block v_align_m d_table_cell f_none t_align_r t_xs_align_l p_xs_left_0">
+                        <p class="fw_light fs_medium d_inline_m m_right_5 color_light">Kiểu xem:</p>
+                        <div class="clearfix d_inline_m">
+                            <button data-isotope-layout="grid" data-isotope-container="#can_change_layout" class="button_type_4 f_left grey state_2 m_right_5 tr_all second_font tt_uppercase vc_child black_button_active"><i class="fa fa-th m_top_0 d_inline_m"></i></button>
+                            <button data-isotope-layout="list" data-isotope-container="#can_change_layout" class="button_type_4 f_left grey state_2 tr_all second_font tt_uppercase vc_child black_hover"><i class="fa fa-th-list m_top_0 d_inline_m"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="divider_light m_bottom_5">
+
+                <!--isotope-->
+                <div id="can_change_layout" class="category_isotope_container three_columns wrapper m_bottom_10 m_xs_bottom_0" data-isotope-options='{
+								"itemSelector": ".category_isotope_item",
+					  			"layoutMode": "fitRows"
+							}'>
+
+                    <!--isotope item-->
+                    @foreach (var item in Model)
+                    {
+                        <div class="category_isotope_item">
+                            <figure class="product_item type_2 c_image_container relative frame_container t_sm_align_c r_image_container qv_container">
+                                <!--image & buttons & label-->
+                                <div class="relative">
+                                    <div class="d_block">
+                                        <img src="@item.HinhSP" alt="" class="c_image_1 tr_all">
+                                        <img src="@item.HinhSP" alt="" class="c_image_2 tr_all">
+                                    </div>
+                                    <a href="@Url.Action("ProductDetail", "Pages", new { @id = item.IdSP})" class="tr_all color_white second_font qv_style_button quick_view tt_uppercase t_align_c d_block clickable d_xs_none"><i class="fa fa-eye d_inline_m m_right_10"></i><span class="fs_medium">Chi tiết</span></a>
+                                </div>
+                                <figcaption class="bg_white relative p_bottom_0">
+                                    <div class="row">
+                                        <div class="col-lg-10 col-md-10 m_bottom_10">
+                                            <a class="second_font sc_hover d_xs_block" href="#"><b>@item.TenSP | @item.BoNho</b></a>
+                                            <div class="relative">
+                                                <a href="#" class="fw_light color_light sc_hover category_link tr_all fs_small">(Đánh giá)</a><br class="d_none">
+                                                <ul class="rating_list hr_list d_sm_inline_b tr_all">
+                                                    <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                    <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                    <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                    <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                    <li><i class="fa fa-star tr_all"></i></li>
+                                                </ul>
+
+                                            </div>
+                                            <hr class="d_none divider_light m_bottom_15">
+                                            <p class="fw_light d_none m_bottom_14 color_grey">@item.MoTaSP</p>
+                                            <hr class="d_none divider_light m_bottom_15">
+                                        </div>
+                                        <div class="col-lg-9 col-md-9 color_light fs_large second_font  t_sm_align_c m_bottom_9">
+                                            <b class="scheme_color d_block">@String.Format("{0:0,0 ₫}", item.GiaSP.Value)</b>
+                                        </div>
+                                    </div>
+                                    @if (item.SLTon > 0)
+                                    {
+                                        if (kh != null)
+                                        {
+                                            <a href="@Url.Action("ThemGioHang", "Cart", new { @id = item.IdSP, @strURL = Request.Url.ToString() })">
+                                                <button class="button_type_2 m_bottom_9 d_block w_full t_align_c lbrown state_2 tr_all second_font fs_medium tt_uppercase"><i class="fa fa-shopping-cart d_inline_m m_right_9"></i>Thêm vào giỏ hàng</button>
+                                            </a>
+                                        }
+                                        else
+                                        {
+                                            <a href="@Url.Action("Login", "User")">
+                                                <button class="button_type_2 m_bottom_9 d_block w_full t_align_c lbrown state_2 tr_all second_font fs_medium tt_uppercase"><i class="fa fa-shopping-cart d_inline_m m_right_9"></i>Thêm vào giỏ hàng</button>
+                                            </a>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <a href="@Url.Action("ThemGioHang", "Cart", new { @id = item.IdSP, @strURL = Request.Url.ToString() })">
+                                            <button class="button_type_2 m_bottom_9 d_block w_full t_align_c lbrown state_2 tr_all second_font fs_medium tt_uppercase"><i class="fa fa-shopping-cart d_inline_m m_right_9"></i>Thêm vào giỏ hàng</button>
+                                        </a>
+                                    }
+
+                                </figcaption>
+                            </figure>
+                        </div>
+                    }
+
+                </div>
+                <div class="d_inline_b">
+                    <div class="MenuTrang">
+                        @Html.PagedListPager(Model, page => Url.Action("Price3", "Product", new
+                        {
+                            page = page
+                        }))
+                    </div>
+                </div>
+                <style>
+                    .MenuTrang li {
+                        display: inline-block;
+                        margin-left: 10px;
+                        cursor: pointer;
+                        box-sizing: border-box;
+                        border-width: 1px;
+                        border-style: solid;
+                        border-color: black;
+                        padding: 8px 10px;
+                        font-size: 15px;
+                    }
+
+                    .MenuTrang {
+                        position: absolute;
+                        left: 50%;
+                    }
+
+                        .MenuTrang li:hover {
+                            background-color: cyan;
+                        }
+
+                        .MenuTrang li:focus {
+                            background-color: black;
+                        }
+                </style>
+            </main>
+        </div>
+    </div>
+</div>

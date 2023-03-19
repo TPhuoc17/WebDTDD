@@ -1,0 +1,447 @@
+C:\Users\tranp\source\repos\DACN\DACN\bin\DACN.dll.config
+C:\Users\tranp\source\repos\DACN\DACN\bin\DACN.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\DACN.pdb
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\csc.exe
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\csc.exe.config
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\csc.rsp
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\csi.exe
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\csi.exe.config
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\csi.rsp
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.AppContext.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Console.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.IO.Compression.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Net.Http.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Net.Sockets.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.ValueTuple.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Xml.XPath.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\vbc.exe
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\vbc.exe.config
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\vbc.rsp
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\VBCSCompiler.exe
+C:\Users\tranp\source\repos\DACN\DACN\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\tranp\source\repos\DACN\DACN\bin\Antlr3.Runtime.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\Newtonsoft.Json.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\System.Web.Helpers.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\System.Web.Mvc.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\System.Web.Optimization.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\System.Web.Razor.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\System.Web.WebPages.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\System.Web.WebPages.Razor.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\WebGrease.dll
+C:\Users\tranp\source\repos\DACN\DACN\bin\System.Web.Helpers.xml
+C:\Users\tranp\source\repos\DACN\DACN\bin\System.Web.Mvc.xml
+C:\Users\tranp\source\repos\DACN\DACN\bin\System.Web.Optimization.xml
+C:\Users\tranp\source\repos\DACN\DACN\bin\System.Web.Razor.xml
+C:\Users\tranp\source\repos\DACN\DACN\bin\System.Web.WebPages.xml
+C:\Users\tranp\source\repos\DACN\DACN\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tranp\source\repos\DACN\DACN\bin\System.Web.WebPages.Razor.xml
+C:\Users\tranp\source\repos\DACN\DACN\bin\Newtonsoft.Json.xml
+C:\Users\tranp\source\repos\DACN\DACN\bin\Antlr3.Runtime.pdb
+C:\Users\tranp\source\repos\DACN\DACN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\tranp\source\repos\DACN\DACN\obj\Debug\DACN.csproj.AssemblyReference.cache
+C:\Users\tranp\source\repos\DACN\DACN\obj\Debug\DACN.csproj.CoreCompileInputs.cache
+C:\Users\tranp\source\repos\DACN\DACN\obj\Debug\DACN.csproj.CopyComplete
+C:\Users\tranp\source\repos\DACN\DACN\obj\Debug\DACN.dll
+C:\Users\tranp\source\repos\DACN\DACN\obj\Debug\DACN.pdb
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\DACN.dll.config
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\DACN.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\DACN.pdb
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\csc.exe
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\csc.exe.config
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\csc.rsp
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\csi.exe
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\csi.exe.config
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\csi.rsp
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.AppContext.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Collections.Immutable.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Console.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Globalization.Calendars.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.IO.Compression.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.IO.FileSystem.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Net.Http.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Net.Sockets.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Reflection.Metadata.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.ValueTuple.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Xml.XPath.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\vbc.exe
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\vbc.exe.config
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\vbc.rsp
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\VBCSCompiler.exe
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\roslyn\VBCSCompiler.exe.config
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\Antlr3.Runtime.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\EntityFramework.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\EntityFramework.SqlServer.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\Microsoft.Web.Infrastructure.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\Newtonsoft.Json.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\System.Web.Helpers.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\System.Web.Mvc.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\System.Web.Optimization.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\System.Web.Razor.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\System.Web.WebPages.Deployment.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\System.Web.WebPages.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\System.Web.WebPages.Razor.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\WebGrease.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\EntityFramework.xml
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\EntityFramework.SqlServer.xml
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\System.Web.Helpers.xml
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\System.Web.Mvc.xml
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\System.Web.Optimization.xml
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\System.Web.Razor.xml
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\System.Web.WebPages.xml
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\System.Web.WebPages.Deployment.xml
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\System.Web.WebPages.Razor.xml
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\Newtonsoft.Json.xml
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\Antlr3.Runtime.pdb
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\obj\Debug\DACN.csproj.AssemblyReference.cache
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\obj\Debug\DACN.csproj.CoreCompileInputs.cache
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\obj\Debug\DACN.csproj.CopyComplete
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\obj\Debug\DACN.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\obj\Debug\DACN.pdb
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\Microsoft.Owin.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\Owin.dll
+D:\Giáo trình\HK8 - Hutech\Đồ án chuyên ngành\DACN\DACN\bin\Microsoft.Owin.xml
+C:\Users\tranp\Downloads\DACN\DACN\bin\DACN.dll.config
+C:\Users\tranp\Downloads\DACN\DACN\bin\DACN.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\DACN.pdb
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\csc.exe
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\csc.exe.config
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\csc.rsp
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\csi.exe
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\csi.exe.config
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\csi.rsp
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.AppContext.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Console.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.IO.Compression.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Net.Http.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Net.Sockets.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.ValueTuple.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Xml.XPath.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\vbc.exe
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\vbc.exe.config
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\vbc.rsp
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\VBCSCompiler.exe
+C:\Users\tranp\Downloads\DACN\DACN\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\tranp\Downloads\DACN\DACN\bin\Antlr3.Runtime.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\EntityFramework.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\EntityFramework.SqlServer.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\Microsoft.Owin.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\Newtonsoft.Json.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\Owin.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\System.Web.Helpers.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\System.Web.Mvc.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\System.Web.Optimization.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\System.Web.Razor.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\System.Web.WebPages.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\System.Web.WebPages.Razor.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\WebGrease.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\EntityFramework.xml
+C:\Users\tranp\Downloads\DACN\DACN\bin\EntityFramework.SqlServer.xml
+C:\Users\tranp\Downloads\DACN\DACN\bin\Microsoft.Owin.xml
+C:\Users\tranp\Downloads\DACN\DACN\bin\System.Web.Helpers.xml
+C:\Users\tranp\Downloads\DACN\DACN\bin\System.Web.Mvc.xml
+C:\Users\tranp\Downloads\DACN\DACN\bin\System.Web.Optimization.xml
+C:\Users\tranp\Downloads\DACN\DACN\bin\System.Web.Razor.xml
+C:\Users\tranp\Downloads\DACN\DACN\bin\System.Web.WebPages.xml
+C:\Users\tranp\Downloads\DACN\DACN\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tranp\Downloads\DACN\DACN\bin\System.Web.WebPages.Razor.xml
+C:\Users\tranp\Downloads\DACN\DACN\bin\Newtonsoft.Json.xml
+C:\Users\tranp\Downloads\DACN\DACN\bin\Antlr3.Runtime.pdb
+C:\Users\tranp\Downloads\DACN\DACN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\tranp\Downloads\DACN\DACN\obj\Debug\DACN.csproj.CoreCompileInputs.cache
+C:\Users\tranp\Downloads\DACN\DACN\obj\Debug\DACN.csproj.CopyComplete
+C:\Users\tranp\Downloads\DACN\DACN\obj\Debug\DACN.dll
+C:\Users\tranp\Downloads\DACN\DACN\obj\Debug\DACN.pdb
+C:\Users\tranp\Downloads\DACN\DACN\bin\PagedList.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\PagedList.Mvc.dll
+C:\Users\tranp\Downloads\DACN\DACN\bin\PagedList.xml
+C:\Users\tranp\Downloads\DACN\DACN\bin\PagedList.Mvc.xml
+C:\Users\tranp\Downloads\DACN\DACN\obj\Debug\DACN.csproj.AssemblyReference.cache
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\DACN.dll.config
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\DACN.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\DACN.pdb
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\csc.exe
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\csc.exe.config
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\csc.rsp
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\csi.exe
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\csi.exe.config
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\csi.rsp
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.AppContext.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Console.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.IO.Compression.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Net.Http.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Net.Sockets.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.ValueTuple.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Xml.XPath.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\vbc.exe
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\vbc.exe.config
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\vbc.rsp
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\VBCSCompiler.exe
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\Antlr3.Runtime.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\EntityFramework.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\EntityFramework.SqlServer.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\EPPlus.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\EPPlus.Interfaces.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\EPPlus.System.Drawing.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\Microsoft.Owin.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\Newtonsoft.Json.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\Owin.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\PagedList.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\PagedList.Mvc.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\System.Web.Helpers.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\System.Web.Mvc.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\System.Web.Optimization.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\System.Web.Razor.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\System.Web.WebPages.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\System.Web.WebPages.Razor.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\WebGrease.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\EntityFramework.xml
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\EntityFramework.SqlServer.xml
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\EPPlus.xml
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\Microsoft.Owin.xml
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\PagedList.xml
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\PagedList.Mvc.xml
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\System.Web.Helpers.xml
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\System.Web.Mvc.xml
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\System.Web.Optimization.xml
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\System.Web.Razor.xml
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\System.Web.WebPages.xml
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\System.Web.WebPages.Razor.xml
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\Newtonsoft.Json.xml
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\Antlr3.Runtime.pdb
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\obj\Debug\DACN.csproj.CoreCompileInputs.cache
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\obj\Debug\DACN.csproj.CopyComplete
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\obj\Debug\DACN.dll
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\obj\Debug\DACN.pdb
+C:\Users\tranp\OneDrive\Desktop\DACN\DACN\obj\Debug\DACN.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\DACN\DACN\bin\DACN.dll.config
+C:\Users\Admin\Desktop\DACN\DACN\bin\DACN.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\DACN.pdb
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\csc.exe
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\csc.exe.config
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\csc.rsp
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\csi.exe
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\csi.exe.config
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\csi.rsp
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.AppContext.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Console.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.IO.Compression.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Net.Http.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.ValueTuple.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\vbc.exe
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\vbc.exe.config
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\vbc.rsp
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\Desktop\DACN\DACN\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\Desktop\DACN\DACN\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\EntityFramework.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\EPPlus.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\EPPlus.Interfaces.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\EPPlus.System.Drawing.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\Microsoft.Owin.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\Owin.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\PagedList.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\PagedList.Mvc.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\System.Web.Helpers.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\System.Web.Optimization.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\System.Web.Razor.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\WebGrease.dll
+C:\Users\Admin\Desktop\DACN\DACN\bin\EntityFramework.xml
+C:\Users\Admin\Desktop\DACN\DACN\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\DACN\DACN\bin\EPPlus.xml
+C:\Users\Admin\Desktop\DACN\DACN\bin\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\Admin\Desktop\DACN\DACN\bin\Microsoft.Owin.xml
+C:\Users\Admin\Desktop\DACN\DACN\bin\PagedList.xml
+C:\Users\Admin\Desktop\DACN\DACN\bin\PagedList.Mvc.xml
+C:\Users\Admin\Desktop\DACN\DACN\bin\System.Web.Helpers.xml
+C:\Users\Admin\Desktop\DACN\DACN\bin\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\DACN\DACN\bin\System.Web.Optimization.xml
+C:\Users\Admin\Desktop\DACN\DACN\bin\System.Web.Razor.xml
+C:\Users\Admin\Desktop\DACN\DACN\bin\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\DACN\DACN\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\DACN\DACN\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\DACN\DACN\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\DACN\DACN\bin\Antlr3.Runtime.pdb
+C:\Users\Admin\Desktop\DACN\DACN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\Desktop\DACN\DACN\obj\Debug\DACN.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\DACN\DACN\obj\Debug\DACN.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\DACN\DACN\obj\Debug\DACN.csproj.CopyComplete
+C:\Users\Admin\Desktop\DACN\DACN\obj\Debug\DACN.dll
+C:\Users\Admin\Desktop\DACN\DACN\obj\Debug\DACN.pdb

@@ -1,0 +1,133 @@
+﻿@model IEnumerable<DACN.Models.TINTUC>
+@using DACN.Models
+
+@{
+    ViewBag.Title = "Post";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Bài viết</title>
+    <meta charset="utf-8">
+    <!--add responsive layout support-->
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--meta info-->
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--include favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="~/Content/template/images/fav.png">
+    <!--fonts include-->
+    <link href='~/Content/template/http://fonts.googleapis.com/css?family=Source+Sans+Pro:900|Lato:400,300italic,300,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='~/Content/template/http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic,300,300italic,400,400italic,600,600italic,900,900italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!--stylesheet include-->
+    <link rel="stylesheet" type="text/css" media="all" href="~/Content/template/plugins/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="~/Content/template/plugins/jackbox/css/jackbox.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="~/Content/template/plugins/jackbox/css/jackbox.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="~/Content/template/css/animate.css">
+    <link rel="stylesheet" type="text/css" media="all" href="~/Content/template/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="~/Content/template/css/style.css">
+    <!--[if lte IE 10]>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="plugins/jackbox/css/jackbox-ie9.css">
+    <![endif]-->
+    <!--head libs-->
+    <!--[if lte IE 8]>
+        <style>
+            #preloader{display:none !important;}
+        </style>
+    <![endif]-->
+    <script src="~/Content/template/js/jquery-2.1.1.min.js"></script>
+    <script src="~/Content/template/js/modernizr.js"></script>
+</head>
+
+
+<div class="wide_layout db_centered bg_white">
+    <!--[if (lt IE 9) | IE 9]>
+        <div class="bg_red" style="padding:5px 0 12px;">
+        <div class="container" style="width:1170px;"><div class="row wrapper"><div class="clearfix color_white" style="padding:9px 0 0;float:left;width:80%;"><i class="fa fa-exclamation-triangle f_left m_right_10" style="font-size:25px;"></i><b>Attention! This page may not display correctly.</b> <b>You are using an outdated version of Internet Explorer. For a faster, safer browsing experience.</b></div><div class="t_align_r" style="float:left;width:20%;"><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode" class="button_type_1 d_block f_right lbrown tr_all second_font fs_medium" target="_blank" style="margin-top:6px;">Update Now!</a></div></div></div></div>
+    <![endif]-->
+    <header role="banner" class="w_inherit">
+        <!--top part-->
+        <div class="header_top_part p_top_0 p_bottom_0">
+            <div class="container">
+                <div class="row">
+
+    </header>
+    <!--breadcrumbs-->
+    <div class="breadcrumbs bg_grey_light_2 fs_medium fw_light">
+        <div class="container">
+            <a href="@Url.Action("Homepage", "Pages")" class="sc_hover">Trang chủ</a> / <span class="color_light">Bài viết</span>
+        </div>
+    </div>
+    <!--main content-->
+    <div class="page_section_offset">
+        <div class="container">
+            <div class="row">
+                <aside class="col-lg-3 col-md-3 col-sm-3 p_top_4">
+                </aside>
+                <main class="col-lg-9 col-md-9 col-sm-9 m_bottom_30 m_xs_bottom_10">
+                    <h2 class="fw_light second_font color_dark tt_uppercase m_bottom_27">Bài viết</h2>
+                    <article class="m_bottom_40 m_xs_bottom_30">
+                        @foreach (var item in Model)
+                        {
+                            <figure>
+                                <a href="@item.Truycap" class="d_block wrapper m_bottom_15 scale_image_container">
+                                    <img src="@item.HinhTT" width="500px" alt="" class="tr_all scale_image">
+                                </a>
+                                <figcaption class="clearfix">
+                                    <!--post info (date & comments)-->
+                                    <div class="post_info size_2 f_left m_right_30 t_align_c lh_small m_sm_right_20">
+                                        <div class="date size_2 bg_scheme_color color_white second_font tt_uppercase m_bottom_18">
+                                            <b class="d_inline_b m_bottom_2">@String.Format("{0:dd}", item.NgayDang)</b>
+                                            <p class="fs_medium">@String.Format("{0:MM}", item.NgayDang)</p>
+                                        </div>
+                                        @*<a href="#" class="sc_hover"><i class="fa fa-comments d_inline_m m_right_3"></i> <span class="fs_small d_inline_m">3</span></a>*@
+                                    </div>
+                                    <!--post excerpt-->
+                                    <div class="f_left post_excerpt size_2">
+                                        <h4 class="second_font m_bottom_5 lh_small"><a href="@item.Truycap" class="sc_hover"><b>@item.TieuDe</b></a></h4>
+                                        <div class="fs_medium fw_light color_light m_bottom_8">
+                                            bởi <a class="sc_hover">Test</a>, đánh giá
+                                            <ul class="rating_list hr_list wrapper d_inline_m m_left_7 article_rating m_right_5">
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li><i class="fa fa-star tr_all"></i></li>
+                                            </ul> @*(3 votes)*@
+                                        </div>
+                                        <p class="fw_light m_bottom_15">@item.NoiDung.</p>
+                                        <a href="@item.Truycap" class="button_type_2 grey state_2 tr_all second_font fs_medium tt_uppercase d_inline_b"><span class="m_left_10 m_right_10 d_inline_b">Đọc thêm</span></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        }
+
+                    </article>
+
+                    <hr class="m_bottom_5">
+                    <div class="d_table w_full">
+                        @*<div class="col-lg-6 col-md-6 col-sm-6 d_xs_block v_align_m d_table_cell f_none fs_medium color_light fw_light m_xs_bottom_5">Results 1 - 5 of 45</div>*@
+                        <div class="col-lg-6 col-md-6 col-sm-6 d_xs_block v_align_m d_table_cell f_none t_align_r t_xs_align_l p_xs_left_0">
+                            <!--pagination-->
+                            <nav class="d_inline_b">
+                                <ul class="hr_list">
+                                    <li class="m_bottom_3 m_right_3"><a href="#" class="button_type_4 tr_delay grey state_2 d_block vc_child t_align_c fs_ex_small"><i class="fa fa-angle-left d_inline_m"></i></a></li>
+                                    <li class="m_bottom_3 m_right_3"><a href="#" class="button_type_4 tr_delay grey state_2 d_block vc_child t_align_c border_black"><span class="d_inline_m fs_small">1</span></a></li>
+                                    <li class="m_bottom_3 m_right_3"><a href="#" class="button_type_4 tr_delay grey state_2 d_block vc_child t_align_c"><span class="d_inline_m fs_small">2</span></a></li>
+                                    <li class="m_bottom_3 m_right_3"><a href="#" class="button_type_4 tr_delay grey state_2 d_block vc_child t_align_c"><span class="d_inline_m fs_small">3</span></a></li>
+                                    <li class="m_bottom_3 m_right_3"><a href="#" class="button_type_4 tr_delay grey state_2 d_block vc_child t_align_c fs_ex_small"><i class="fa fa-angle-right d_inline_m"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+</div>
+

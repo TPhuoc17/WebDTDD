@@ -1,0 +1,116 @@
+﻿@model IEnumerable<DACN.Models.LIENHE>
+
+
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="~/Content/template/images/fav.png">
+
+    <!--stylesheet include-->
+    <link rel="stylesheet" type="text/css" media="all" href="~/Content/template/plugins/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="~/Content/template/plugins/jackbox/css/jackbox.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="~/Content/template/css/animate.css">
+    <link rel="stylesheet" type="text/css" media="all" href="~/Content/template/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="~/Content/template/css/style.css">
+    <!--[if lte IE 10]>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="plugins/jackbox/css/jackbox-ie9.css">
+    <![endif]-->
+    <!--head libs-->
+    <!--[if lte IE 8]>
+        <style>
+            #preloader{display:none !important;}
+        </style>
+    <![endif]-->
+    <script src="~/Content/template/js/jquery-2.1.1.min.js"></script>
+    <script src="~/Content/template/js/modernizr.js"></script>
+
+    <!--libs include-->
+    <script src="~/Content/template/plugins/jquery.appear.js"></script>
+    <script src="~/Content/template/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="~/Content/template/plugins/twitter/jquery.tweet.min.js"></script>
+    <script src="~/Content/template/plugins/flickr.js"></script>
+    <script src="~/Content/template/plugins/afterresize.min.js"></script>
+    <script src="~/Content/template/plugins/jackbox/js/jackbox-packed.min.js"></script>
+    <script src="~/Content/template/js/retina.min.js"></script>
+    <script src="~/Content/template/plugins/colorpicker/colorpicker.js"></script>
+    <script src="~/Content/template/js/styleswitcher.js"></script>
+
+    <!--theme initializer-->
+    <script src="~/Content/template/js/themeCore.js"></script>
+    <script src="~/Content/template/js/theme.js"></script>
+</head>
+
+<title>Liên hệ</title>
+<!--main content-->
+<div class="page_section_offset">
+    <div class="container">
+        <div class="row">
+           
+            <div class="col-lg-9 col-md-9 col-sm-9 m_bottom_30 m_xs_bottom_10">
+                <h2 class="fw_light second_font color_dark tt_uppercase m_bottom_27">Địa chỉ</h2>
+                <div class="iframe_map_container m_bottom_38 m_xs_bottom_30">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4205948970775!2d106.78290865014992!3d10.855580060658669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175276e7ea103df%3A0xb6cf10bb7d719327!2zSHV0ZWNoIEtodSBFIC0gVHJ1bmcgVMOibSDEkMOgbyBU4bqhbyBOaMOibiBM4buxYyBDaOG6pXQgTMaw4bujbmcgQ2Fv!5e0!3m2!1svi!2s!4v1668599984264!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="row">
+                    <main class="col-lg-4 col-md-4 col-sm-4 m_xs_bottom_30">
+                        <h5 class="color_dark tt_uppercase second_font fw_light m_bottom_13">Liên hệ với chúng tôi</h5>
+                        <hr class="divider_bg m_bottom_25">
+                        <ul class="second_font vr_list_type_2 m_bottom_33 m_xs_bottom_30">
+                            <li><i class="fa fa-phone color_dark fs_large"></i>0788-988-797</li>
+                            <li class="w_break" data-icon=""><i class="fa fa-envelope color_dark"></i><a href="mailto:trongphuoc.le.097@gmail.com" class="sc_hover d_inline_b">douplePcompany@gmail.com</a></li>
+                        </ul>
+                        <p class="second_font m_bottom_15"><i class="bi bi-house-door-fill"> 10/80C XL Hà Nội, Phường Tân Phú, Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam</i></p>
+
+                        <h5 class="color_dark tt_uppercase second_font fw_light m_bottom_13">Thời gian mở cửa</h5>
+                        <hr class="divider_bg m_bottom_25">
+                        <ul class="second_font">
+                            <li>Thứ 2 - Thứ 7: 08.00 - 20.00</li>
+                            <li>Chủ nhật & ngày lễ: 09.00 - 20.00</li>
+                        </ul>
+                    </main>
+                    <section class="col-lg-8 col-md-8 col-sm-8">
+                        <h5 class="color_dark tt_uppercase second_font fw_light m_bottom_13">Liên hệ qua Email</h5>
+                        <hr class="divider_bg m_bottom_25">
+                        <p class="second_font m_bottom_14">Điền đầy đủ các thông tin các mục có dấu (<span class="color_red">*</span>)</p>
+                        @using (Html.BeginForm("Contact", "Pages", FormMethod.Post, new { id = "frmValidate" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <form id="contactform" class="b_default_layout">
+                                <ul>
+                                    <li class="row">
+
+                                        <div class="col-lg-6 col-md-6 col-sm-6 m_bottom_15">
+                                            <label class="second_font required d_inline_b m_bottom_5 clickable" for="HoTen">Tên</label><br>
+                                            <input type="text" name="HoTen" id="cf_name" class="tr_all w_full fw_light">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 m_bottom_15">
+                                            <label class="second_font required d_inline_b m_bottom_5 clickable" for="EmailLH">Địa chỉ Email</label><br>
+                                            <input type="email" name="EmailLH" id="cf_email" class="tr_all w_full fw_light">
+                                        </div>
+                                    </li>
+                                    @*<li class="m_bottom_15">
+                                            <label class="second_font d_inline_b m_bottom_5 clickable" for="cf_telephone">Số điện thoại</label><br>
+                                            <input type="text" name="cf_telephone" id="cf_telephone" class="tr_all w_full fw_light">
+                                        </li>*@
+                                    <li class="m_bottom_5">
+                                        <label class="second_font d_inline_b m_bottom_5 clickable" for="YeuCau">Nội dung tin nhắn</label><br>
+                                        <textarea id="cf_message" name="YeuCau" rows="6" class="tr_all w_full fw_light"></textarea>
+                                    </li>
+                                    <li>
+                                        <button class="button_type_2 black state_2 tr_all second_font fs_medium tt_uppercase d_inline_b"><span class="m_left_10 m_right_10 d_inline_b"><b>Gửi</b></span></button>
+                                    </li>
+
+                                </ul>
+                            </form>
+                        }
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

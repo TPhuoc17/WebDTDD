@@ -1,0 +1,1375 @@
+﻿@model IEnumerable<DACN.Models.SANPHAM>
+
+@using DACN.Models
+@{
+    ViewBag.Title = "HomePage";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+    TAIKHOAN kh = (TAIKHOAN)Session["TaiKhoan"];
+}
+
+<title>Trang chủ</title>
+
+<!--main content-->
+<section class="section_offset hidden animated p_bottom_0 m_bottom_0" data-animation="fadeInDown">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <!--banner-->
+                <figure class="relative wrapper scale_image_container m_bottom_30 r_image_container">
+                    <img src="~/Content/product/mac_18.png" alt="" class="tr_all scale_image" width="360px" height="270px">
+                    <!--caption-->
+                    <figcaption class="caption_type_1 tr_all">
+                        <div class="d_inline_b color_white fw_light caption_title tt_uppercase bg_lbrown_translucent">
+                            Xả hàng
+                        </div>
+                        <div class="caption_inner">
+                            <h3 class="color_white second_font fw_light m_bottom_5 fs_sm_default"><a href="#" class="color_orange color_white_hover">Tậu ngay</a> Điện thoại mới!</h3>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <!--banner-->
+                <figure class="relative wrapper scale_image_container m_bottom_30 r_image_container">
+                    <img src="https://ideen.vn/resources/uploaded/G-Ideen/Files/xu%20huong%203.jpg" alt="" class="tr_all scale_image" width="360px" height="270px">
+                    <!--caption-->
+                    <figcaption class="caption_type_1 tr_all">
+                        <div class="d_inline_b color_white fw_light caption_title tt_uppercase bg_lbrown_translucent">
+                            Giá mới
+                        </div>
+                        <div class="caption_inner">
+                            <h3 class="color_white second_font fw_light m_bottom_5 fs_sm_default">Giảm 30% <a href="#" class="color_orange color_white_hover">Săn ngay!</a></h3>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <!--banner-->
+                <figure class="relative wrapper scale_image_container m_bottom_30 r_image_container">
+                    <img src="https://cdn.didongviet.vn/pub/media/mageplaza/bannerslider/banner/image/7/6/768x371_1__40.jpg" alt="" class="tr_all scale_image" width="360px" height="270px">
+                    <!--caption-->
+                    <figcaption class="caption_type_1 tr_all">
+                        <div class="d_inline_b color_white fw_light caption_title tt_uppercase bg_lbrown_translucent">
+                            Deal sốc
+                        </div>
+                        <div class="caption_inner">
+                            <h3 class="color_white second_font fw_light m_bottom_5 fs_sm_default"><a href="#" class="color_orange color_white_hover">Nâng đời điện thoại </a> <h4 class="color_white second_font fw_light m_bottom_5 fs_sm_default">Chi tiết...</h4> </h3>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+<!--main content-->
+<!--new products-->
+<div class="section_offset p_bottom_0 m_bottom_5">
+    <div class="container">
+        <div class="d_table m_bottom_5 w_full animated hidden" data-animation="fadeInDown">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 v_align_m d_table_cell f_none">
+                <h5 class="second_font color_dark tt_uppercase fw_light d_inline_m m_bottom_4">Nổi bật</h5>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 t_align_r d_table_cell f_none">
+                <!--carousel navigation-->
+                <div class="clearfix d_inline_b">
+                    <button class="featured_prev black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child m_right_5"><i class="fa fa-angle-left d_inline_m"></i></button>
+                    <button class="featured_next black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child"><i class="fa fa-angle-right d_inline_m"></i></button>
+                </div>
+            </div>
+        </div>
+        <hr class="divider_bg m_bottom_15 animated hidden" data-animation="fadeInDown" data-animation-delay="100">
+        <div class="row">
+            <div class="owl-carousel" data-nav="featured_" data-owl-carousel-options='{
+									"stagePadding" : 15,
+									"margin" : 30,
+									"responsive" : {
+											"0" : {
+												"items" : 1
+											},
+											"320" : {
+												"items" : 2
+											},
+											"550" : {
+												"items" : 3
+											},
+											"992" : {
+												"items" : 4
+											}
+										}
+									}'>
+                <!--owl item-->
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                    <!--product-->
+                    <figure class="relative r_image_container c_image_container qv_container">
+                        <div class="product_label fs_ex_small circle color_white bg_red t_align_c vc_child tt_uppercase"><i class="d_inline_m">Hot</i></div>
+                        <div class="d_block m_bottom_15 relative">
+                            <img src="~/Content/product/Ip14PM_1.png" alt="" class="c_image_1 tr_all">
+                            <img src="~/Content/product/Ip14PM_1.png" alt="" class="c_image_2 tr_all">
+                            <a href="@Url.Action("ProductDetail", "Pages", new { @id = 1})" class="tr_all color_white second_font qv_style_button quick_view tt_uppercase t_align_c d_block clickable d_xs_none"><i class="fa fa-eye d_inline_m m_right_10"></i><span class="fs_medium">Chi tiết</span></a>
+                        </div>
+                        <figcaption class="t_align_c">
+                            <ul>
+                                <li><a href="@Url.Action("ProductDetail", "Pages", new { @id = 1})" class="second_font sc_hover"><b>IPhone 14 Pro Max - 128GB </b></a></li>
+                                <li class="m_bottom_7"><p class="color_light  d_inline fs_small">Đánh giá</p></li>
+                                <li>
+                                    <ul class="rating_list hr_list d_inline_b">
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                    </ul>
+                                </li>
+                                <li class="m_bottom_16"><b class="fs_large second_font scheme_color">34.990.000 ₫</b></li>
+                                <li>
+                                    <div class="clearfix d_inline_b">
+                                        <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!--owl item-->
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                    <!--product-->
+                    <figure class="relative r_image_container c_image_container qv_container">
+                        <div class="product_label fs_ex_small circle color_white bg_red t_align_c vc_child tt_uppercase"><i class="d_inline_m">Hot</i></div>
+                        <div class="d_block m_bottom_15 relative">
+                            <img src="~/Content/product/galaxys22ultra.png" alt="" class="c_image_1 tr_all">
+                            <img src="~/Content/product/galaxys22ultra.png" alt="" class="c_image_2 tr_all">
+                            <a href="@Url.Action("ProductDetail", "Pages", new {  @id = 6})" class="tr_all color_white second_font qv_style_button quick_view tt_uppercase t_align_c d_block clickable d_xs_none"><i class="fa fa-eye d_inline_m m_right_10"></i><span class="fs_medium">Chi tiết</span></a>
+                        </div>
+                        <figcaption class="t_align_c">
+                            <ul>
+                                <li><a href="@Url.Action("ProductDetail", "Pages", new { @id = 6})" class="second_font sc_hover"><b>Samsung Galaxy S22 Ultra - 128GB </b></a></li>
+                                <li class="m_bottom_7"><p class="color_light  d_inline fs_small">Đánh giá</p></li>
+                                <li>
+                                    <ul class="rating_list hr_list d_inline_b">
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                    </ul>
+                                </li>
+                                <li class="m_bottom_16"><b class="fs_large second_font scheme_color">24.790.000 ₫</b></li>
+                                <li>
+                                    <div class="clearfix d_inline_b">
+                                        <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!--owl item-->
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                    <!--product-->
+                    <figure class="relative r_image_container c_image_container qv_container">
+                        <div class="product_label fs_ex_small circle color_white bg_red t_align_c vc_child tt_uppercase"><i class="d_inline_m">Hot</i></div>
+                        <div class="d_block m_bottom_15 relative">
+                            <img src="~/Content/product/xiaomi12TPro.png" alt="" class="c_image_1 tr_all">
+                            <img src="~/Content/product/xiaomi12TPro.png" alt="" class="c_image_2 tr_all">
+                            <a href="@Url.Action("ProductDetail", "Pages", new {  @id = 7})" class="tr_all color_white second_font qv_style_button quick_view tt_uppercase t_align_c d_block clickable d_xs_none"><i class="fa fa-eye d_inline_m m_right_10"></i><span class="fs_medium">Chi tiết</span></a>
+                        </div>
+                        <figcaption class="t_align_c">
+                            <ul>
+                                <li><a href="@Url.Action("ProductDetail", "Pages", new { @id = 7})" class="second_font sc_hover"><b>Xiaomi 12T Pro - 128GB </b></a></li>
+                                <li class="m_bottom_7"><p class="color_light  d_inline fs_small">Đánh giá</p></li>
+                                <li>
+                                    <ul class="rating_list hr_list d_inline_b">
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                    </ul>
+                                </li>
+                                <li class="m_bottom_16"><b class="fs_large second_font scheme_color">16.590.000 ₫</b></li>
+                                <li>
+                                    <div class="clearfix d_inline_b">
+                                        <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!--owl item-->
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                    <!--product-->
+                    <figure class="relative r_image_container c_image_container qv_container">
+                        <div class="product_label fs_ex_small circle color_white bg_red t_align_c vc_child tt_uppercase"><i class="d_inline_m">Hot</i></div>
+                        <div class="d_block m_bottom_15 relative">
+                            <img src="~/Content/product/rogphone6.png" alt="" class="c_image_1 tr_all">
+                            <img src="~/Content/product/rogphone6.png" alt="" class="c_image_2 tr_all">
+                            <a href="@Url.Action("ProductDetail", "Pages", new { @id = 13})" class="tr_all color_white second_font qv_style_button quick_view tt_uppercase t_align_c d_block clickable d_xs_none"><i class="fa fa-eye d_inline_m m_right_10"></i><span class="fs_medium">Chi tiết</span></a>
+                        </div>
+                        <figcaption class="t_align_c">
+                            <ul>
+                                <li><a href="@Url.Action("ProductDetail", "Pages", new { @id = 13})" class="second_font sc_hover"><b>ASUS ROG Phone 6 - 128GB </b></a></li>
+                                <li class="m_bottom_7"><p class="color_light  d_inline fs_small">Đánh giá</p></li>
+                                <li>
+                                    <ul class="rating_list hr_list d_inline_b">
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                    </ul>
+                                </li>
+                                <li class="m_bottom_16"><b class="fs_large second_font scheme_color">24.990.000 ₫</b></li>
+                                <li>
+                                    <div class="clearfix d_inline_b">
+                                        <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!--owl item-->
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                    <!--product-->
+                    <figure class="relative r_image_container c_image_container qv_container">
+                        <div class="product_label fs_ex_small circle color_white bg_red t_align_c vc_child tt_uppercase"><i class="d_inline_m">Hot</i></div>
+                        <div class="d_block m_bottom_15 relative">
+                            <img src="~/Content/product/Ip14PM_1.png" alt="" class="c_image_1 tr_all">
+                            <img src="~/Content/product/Ip14PM_1.png" alt="" class="c_image_2 tr_all">
+                            <a href="@Url.Action("ProductDetail", "Pages", new { @id = 1})" class="tr_all color_white second_font qv_style_button quick_view tt_uppercase t_align_c d_block clickable d_xs_none"><i class="fa fa-eye d_inline_m m_right_10"></i><span class="fs_medium">Chi tiết</span></a>
+                        </div>
+                        <figcaption class="t_align_c">
+                            <ul>
+                                <li><a href="@Url.Action("ProductDetail", "Pages", new { @id = 1})" class="second_font sc_hover"><b>IPhone 14 Pro Max - 128GB </b></a></li>
+                                <li class="m_bottom_7"><p class="color_light  d_inline fs_small">Đánh giá</p></li>
+                                <li>
+                                    <ul class="rating_list hr_list d_inline_b">
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                    </ul>
+                                </li>
+                                <li class="m_bottom_16"><b class="fs_large second_font scheme_color">34.990.000 ₫</b></li>
+                                <li>
+                                    <div class="clearfix d_inline_b">
+                                        <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!--owl item-->
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                    <!--product-->
+                    <figure class="relative r_image_container c_image_container qv_container">
+                        <div class="product_label fs_ex_small circle color_white bg_red t_align_c vc_child tt_uppercase"><i class="d_inline_m">Hot</i></div>
+                        <div class="d_block m_bottom_15 relative">
+                            <img src="~/Content/product/galaxys22ultra.png" alt="" class="c_image_1 tr_all">
+                            <img src="~/Content/product/galaxys22ultra.png" alt="" class="c_image_2 tr_all">
+                            <a href="@Url.Action("ProductDetail", "Pages", new { @id = 6})" class="tr_all color_white second_font qv_style_button quick_view tt_uppercase t_align_c d_block clickable d_xs_none"><i class="fa fa-eye d_inline_m m_right_10"></i><span class="fs_medium">Xem nhanh</span></a>
+                        </div>
+                        <figcaption class="t_align_c">
+                            <ul>
+                                <li><a href="@Url.Action("ProductDetail", "Pages", new { @id = 6})" class="second_font sc_hover"><b>Samsung Galaxy S22 Ultra - 128GB </b></a></li>
+                                <li class="m_bottom_7"><p class="color_light  d_inline fs_small">Đánh giá</p></li>
+                                <li>
+                                    <ul class="rating_list hr_list d_inline_b">
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                    </ul>
+                                </li>
+                                <li class="m_bottom_16"><b class="fs_large second_font scheme_color">24.790.000 ₫</b></li>
+                                <li>
+                                    <div class="clearfix d_inline_b">
+                                        <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!--owl item-->
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                    <!--product-->
+                    <figure class="relative r_image_container c_image_container qv_container">
+                        <div class="product_label fs_ex_small circle color_white bg_red t_align_c vc_child tt_uppercase"><i class="d_inline_m">Hot</i></div>
+                        <div class="d_block m_bottom_15 relative">
+                            <img src="~/Content/product/xiaomi12TPro.png" alt="" class="c_image_1 tr_all">
+                            <img src="~/Content/product/xiaomi12TPro.png" alt="" class="c_image_2 tr_all">
+                            <a href="@Url.Action("ProductDetail", "Pages", new { @id = 7})" class="tr_all color_white second_font qv_style_button quick_view tt_uppercase t_align_c d_block clickable d_xs_none"><i class="fa fa-eye d_inline_m m_right_10"></i><span class="fs_medium">Chi tiết</span></a>
+                        </div>
+                        <figcaption class="t_align_c">
+                            <ul>
+                                <li><a href="@Url.Action("ProductDetail", "Pages", new { @id = 7})" class="second_font sc_hover"><b>Xiaomi 12T Pro - 128GB </b></a></li>
+                                <li class="m_bottom_7"><p class="color_light  d_inline fs_small">Đánh giá</p></li>
+                                <li>
+                                    <ul class="rating_list hr_list d_inline_b">
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                    </ul>
+                                </li>
+                                <li class="m_bottom_16"><b class="fs_large second_font scheme_color">16.590.000 ₫</b></li>
+                                <li>
+                                    <div class="clearfix d_inline_b">
+                                        <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!--owl item-->
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                    <!--product-->
+                    <figure class="relative r_image_container c_image_container qv_container">
+                        <div class="product_label fs_ex_small circle color_white bg_red t_align_c vc_child tt_uppercase"><i class="d_inline_m">Hot</i></div>
+                        <div class="d_block m_bottom_15 relative">
+                            <img src="~/Content/product/rogphone6.png" alt="" class="c_image_1 tr_all">
+                            <img src="~/Content/product/rogphone6.png" alt="" class="c_image_2 tr_all">
+                            <a href="@Url.Action("ProductDetail", "Pages", new {  @id = 13})" class="tr_all color_white second_font qv_style_button quick_view tt_uppercase t_align_c d_block clickable d_xs_none"><i class="fa fa-eye d_inline_m m_right_10"></i><span class="fs_medium">Chi tiết</span></a>
+                        </div>
+                        <figcaption class="t_align_c">
+                            <ul>
+                                <li><a href="@Url.Action("ProductDetail", "Pages", new { @id = 13})" class="second_font sc_hover"><b>ASUS ROG Phone 6 - 128GB </b></a></li>
+                                <li class="m_bottom_7"><p class="color_light  d_inline fs_small">Đánh giá</p></li>
+                                <li>
+                                    <ul class="rating_list hr_list d_inline_b">
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                    </ul>
+                                </li>
+                                <li class="m_bottom_16"><b class="fs_large second_font scheme_color">24.990.000 ₫</b></li>
+                                <li>
+                                    <div class="clearfix d_inline_b">
+                                        <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section_offset p_bottom_0">
+    <div class="container">
+        <hr class="divider_lbrown m_bottom_25 animated hidden" data-animation="fadeInDown">
+        <div class="row sh_container">
+            <div class="col-lg-4 col-md-4 col-sm-4 same_height animated hidden" data-animation="fadeInDown">
+                <section class="item_represent relative m_bottom_25 m_xs_bottom_30 h_inherit t_sm_align_c">
+                    <!--icon-->
+                    <div class="d_inline_m m_sm_bottom_15 m_sm_right_0 bg_lbrown color_white m_right_17 icon_wrap_1 t_align_c vc_child"><i class="fa fa-lock d_inline_m"></i></div>
+                    <!--description-->
+                    <div class="d_inline_m description w_sm_full">
+                        <h3 class="second_font color_dark m_bottom_10">An toàn &amp; Bảo mật</h3>
+                        <p class="fw_light m_bottom_10">Bảo mật thông tin người dùng giúp cho việc mua sắm an toàn và đáng tin cậy hơn & Chính sách bảo hành dễ dành và nhanh chóng.</p>
+                    </div>
+                </section>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 same_height animated hidden" data-animation="fadeInDown" data-animation-delay="150">
+                <section class="item_represent with_divider relative m_bottom_25 m_xs_bottom_30 h_inherit t_sm_align_c">
+                    <!--icon-->
+                    <div class="d_inline_m m_sm_bottom_15 m_sm_right_0 bg_lbrown color_white m_right_17 icon_wrap_1 t_align_c vc_child"><i class="fa fa-truck d_inline_m"></i></div>
+                    <!--description-->
+                    <div class="d_inline_m description">
+                        <h3 class="second_font color_dark m_bottom_10">Free Ship</h3>
+                        <p class="fw_light m_bottom_10">Chính sách FreeShip cho các đơn hàng từ 200k trong khu vực các thành phố lớn và 500k trên toàn quốc.</p>
+                    </div>
+                </section>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 same_height animated hidden" data-animation="fadeInDown" data-animation-delay="300">
+                <section class="item_represent with_divider relative m_bottom_25 m_xs_bottom_30 h_inherit t_sm_align_c">
+                    <!--icon-->
+                    <div class="d_inline_m m_sm_bottom_15 m_sm_right_0 bg_lbrown color_white m_right_17 icon_wrap_1 t_align_c vc_child"><i class="fa fa-certificate d_inline_m"></i></div>
+                    <!--description-->
+                    <div class="d_inline_m description">
+                        <h3 class="second_font color_dark m_bottom_10">Đổi trả và hoàn tiền</h3>
+                        <p class="fw_light m_bottom_10">Đổi trả và hoàn lại 100% số tiền nếu sản phẩm nhận được không đúng theo yêu cầu của bạn.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <hr class="divider_lbrown m_bottom_0 animated hidden" data-animation="fadeInDown">
+    </div>
+</div>
+<p> &emsp;</p>
+<!--brands carousel-->
+<div class="section_offset p_top_0 p_bottom_0 m_bottom_27">
+    <section class="container m_bottom_10">
+        <div class="d_table m_bottom_5 w_full animated hidden" data-animation="fadeInDown">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 v_align_m d_table_cell f_none">
+                <h5 class="second_font color_dark tt_uppercase fw_light d_inline_m m_bottom_4">Thương hiệu</h5>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 t_align_r d_table_cell f_none">
+                <!--carousel navigation-->
+                <div class="clearfix d_inline_b">
+                    <button class="brands_carousel_prev black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child m_right_5"><i class="fa fa-angle-left d_inline_m"></i></button>
+                    <button class="brands_carousel_next black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child"><i class="fa fa-angle-right d_inline_m"></i></button>
+                </div>
+            </div>
+        </div>
+        <hr class="divider_bg m_bottom_15 animated hidden" data-animation="fadeInDown" data-animation-delay="100">
+        <!--carousel-->
+        <div class="row">
+            <div class="owl-carousel" data-nav="brands_carousel_"
+                 data-owl-carousel-options='{
+								"stagePadding" : 15,
+								"margin" : 30,
+								"responsive" : {
+										"0" : {
+											"items" : 2
+										},
+										"320" : {
+											"items" : 3
+										},
+										"550" : {
+											"items" : 4
+										},
+										"768" : {
+											"items" : 4
+										},
+										"992" : {
+											"items" : 5
+										},
+										"1200" : {
+											"items" : 6
+										}
+									}
+								}'>
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                    <a href="#" class="d_block frame_container">
+                        <img src="~/Content/product/brand_logo/logoApple.png" alt="">
+                    </a>
+                </div>
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                    <a href="#" class="d_block frame_container">
+                        <img src="~/Content/product/brand_logo/logoSamsung.png" alt="">
+                    </a>
+                </div>
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                    <a href="#" class="d_block frame_container">
+                        <img src="~/Content/product/brand_logo/logoXiaomi.png" alt="">
+                    </a>
+                </div>
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                    <a href="#" class="d_block frame_container">
+                        <img src="~/Content/product/brand_logo/logoVivo.png" alt="">
+                    </a>
+                </div>
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                    <a href="#" class="d_block frame_container">
+                        <img src="~/Content/product/brand_logo/logoOppo.png" alt="">
+                    </a>
+                </div>
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                    <a href="#" class="d_block frame_container">
+                        <img src="~/Content/product/brand_logo/logoROG.png" alt="">
+                    </a>
+                </div>
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                    <a href="#" class="d_block frame_container">
+                        <img src="~/Content/product/brand_logo/logoNokia.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!--apple products-->
+<div class="section_offset p_bottom_0 m_bottom_27">
+    <div class="container">
+        <div class="d_table m_bottom_5 w_full animated hidden" data-animation="fadeInDown">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 v_align_m d_table_cell f_none">
+                <h5 class="second_font color_dark tt_uppercase fw_light d_inline_m m_bottom_4">Apple</h5>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 t_align_r d_table_cell f_none">
+                <!--carousel navigation-->
+                <button class="button_type_1 black state_2 tr_all second_font fs_medium"> Xem tất cả</button>
+
+                <div class="clearfix d_inline_b">
+                    <button class="new_prev black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child m_right_5"><i class="fa fa-angle-left d_inline_m"></i></button>
+                    <button class="new_next black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child"><i class="fa fa-angle-right d_inline_m"></i></button>
+                </div>
+            </div>
+        </div>
+        <hr class="divider_bg m_bottom_15 animated hidden" data-animation="fadeInDown" data-animation-delay="100">
+        <div class="row">
+            <div class="owl-carousel" data-nav="new_" data-owl-carousel-options='{
+									"stagePadding" : 15,
+									"margin" : 30,
+									"responsive" : {
+											"0" : {
+												"items" : 1
+											},
+											"320" : {
+												"items" : 2
+											},
+											"550" : {
+												"items" : 3
+											},
+											"992" : {
+												"items" : 4
+											}
+										}
+									}'>
+                <!--owl item-->
+                @foreach (var item in Model)
+                {
+                    if (item.MaNSX == 1)
+                    {
+                        <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                            <!--product-->
+                            <figure class="relative r_image_container c_image_container qv_container">
+                                <div class="product_label fs_ex_small circle color_white bg_red t_align_c vc_child tt_uppercase"><i class="d_inline_m">Hot</i></div>
+                                <div class="d_block m_bottom_15 relative">
+                                    <img src="@item.HinhSP" alt="" class="c_image_1 tr_all">
+                                    <img src="@item.HinhSP" alt="" class="c_image_2 tr_all">
+                                    <a href="@Url.Action("ProductDetail", "Pages", new { @id = item.IdSP})" class="tr_all color_white second_font qv_style_button quick_view tt_uppercase t_align_c d_block clickable d_xs_none"><i class="fa fa-eye d_inline_m m_right_10"></i><span class="fs_medium">Chi tiết</span></a>
+                                </div>
+                                <figcaption class="t_align_c">
+                                    <ul>
+                                        <li><a href="@Url.Action("ProductDetail", "Pages", new { @id = item.IdSP})" class="second_font sc_hover"><b>@item.TenSP - @item.BoNho </b></a></li>
+                                        <li class="m_bottom_7"><p class="color_light  d_inline fs_small">Đánh giá</p></li>
+                                        <li>
+                                            <ul class="rating_list hr_list d_inline_b">
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li><i class="fa fa-star tr_all"></i></li>
+                                                <li><i class="fa fa-star tr_all"></i></li>
+                                            </ul>
+                                        </li>
+                                        <li class="m_bottom_16"><b class="fs_large second_font scheme_color">@String.Format("{0:0,0 ₫}", item.GiaSP.Value)</b></li>
+                                        @if (item.SLTon > 0)
+                                        {
+                                            if (kh != null)
+                                            {
+                                                <li>
+                                                    <div class="clearfix d_inline_b">
+                                                        <a href="@Url.Action("ThemGioHang", "Cart", new { @id = item.IdSP, @strURL = Request.Url.ToString() })">
+                                                            <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                                        </a>
+                                                    </div>
+
+                                                </li>
+
+                                            }
+                                            else
+                                            {
+                                                <li>
+                                                    <div class="clearfix d_inline_b">
+                                                        <a href="@Url.Action("Login", "User")">
+                                                            <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                                        </a>
+                                                    </div>
+
+                                                </li>
+
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <li>
+                                                <div class="clearfix d_inline_b">
+                                                    <a href="@Url.Action("ThemGioHang", "Cart", new { @id = item.IdSP, @strURL = Request.Url.ToString() })">
+                                                        <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        }
+
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    }
+                }
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--samsung products-->
+<div class="section_offset p_bottom_0 m_bottom_27">
+    <div class="container">
+        <div class="d_table m_bottom_5 w_full animated hidden" data-animation="fadeInDown">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 v_align_m d_table_cell f_none">
+                <h5 class="second_font color_dark tt_uppercase fw_light d_inline_m m_bottom_4">Samsung</h5>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 t_align_r d_table_cell f_none">
+                <!--carousel navigation-->
+                <button class="button_type_1 black state_2 tr_all second_font fs_medium"> Xem tất cả</button>
+
+                <div class="clearfix d_inline_b">
+                    <button class="new_prev black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child m_right_5"><i class="fa fa-angle-left d_inline_m"></i></button>
+                    <button class="new_next black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child"><i class="fa fa-angle-right d_inline_m"></i></button>
+                </div>
+            </div>
+        </div>
+        <hr class="divider_bg m_bottom_15 animated hidden" data-animation="fadeInDown" data-animation-delay="100">
+        <div class="row">
+            <div class="owl-carousel" data-nav="new_" data-owl-carousel-options='{
+									"stagePadding" : 15,
+									"margin" : 30,
+									"responsive" : {
+											"0" : {
+												"items" : 1
+											},
+											"320" : {
+												"items" : 2
+											},
+											"550" : {
+												"items" : 3
+											},
+											"992" : {
+												"items" : 4
+											}
+										}
+									}'>
+                <!--owl item-->
+                @foreach (var item in Model)
+                {
+                    if (item.MaNSX == 2)
+                    {
+                        <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                            <!--product-->
+                            <figure class="relative r_image_container c_image_container qv_container">
+                                <div class="product_label fs_ex_small circle color_white bg_red t_align_c vc_child tt_uppercase"><i class="d_inline_m">Hot</i></div>
+                                <div class="d_block m_bottom_15 relative">
+                                    <img src="@item.HinhSP" alt="" class="c_image_1 tr_all">
+                                    <img src="@item.HinhSP" alt="" class="c_image_2 tr_all">
+                                    <a href="@Url.Action("ProductDetail", "Pages", new { @id = item.IdSP})" class="tr_all color_white second_font qv_style_button quick_view tt_uppercase t_align_c d_block clickable d_xs_none"><i class="fa fa-eye d_inline_m m_right_10"></i><span class="fs_medium">Chi tiết</span></a>
+                                </div>
+                                <figcaption class="t_align_c">
+                                    <ul>
+                                        <li><a href="@Url.Action("ProductDetail", "Pages", new { @id = item.IdSP})" class="second_font sc_hover"><b>@item.TenSP - @item.BoNho </b></a></li>
+                                        <li class="m_bottom_7"><p class="color_light  d_inline fs_small">Đánh giá</p></li>
+                                        <li>
+                                            <ul class="rating_list hr_list d_inline_b">
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li><i class="fa fa-star tr_all"></i></li>
+                                                <li><i class="fa fa-star tr_all"></i></li>
+                                            </ul>
+                                        </li>
+                                        <li class="m_bottom_16"><b class="fs_large second_font scheme_color">@String.Format("{0:0,0 ₫}", item.GiaSP.Value)</b></li>
+                                        @if (item.SLTon > 0)
+                                        {
+                                            if (kh != null)
+                                            {
+                                                <li>
+                                                    <div class="clearfix d_inline_b">
+                                                        <a href="@Url.Action("ThemGioHang", "Cart", new { @id = item.IdSP, @strURL = Request.Url.ToString() })">
+                                                            <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                                        </a>
+                                                    </div>
+
+                                                </li>
+
+                                            }
+                                            else
+                                            {
+                                                <li>
+                                                    <div class="clearfix d_inline_b">
+                                                        <a href="@Url.Action("Login", "User")">
+                                                            <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                                        </a>
+                                                    </div>
+
+                                                </li>
+
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <li>
+                                                <div class="clearfix d_inline_b">
+                                                    <a href="@Url.Action("ThemGioHang", "Cart", new { @id = item.IdSP, @strURL = Request.Url.ToString() })">
+                                                        <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        }
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    }
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--xiaomi products-->
+<div class="section_offset p_bottom_0 m_bottom_27">
+    <div class="container">
+        <div class="d_table m_bottom_5 w_full animated hidden" data-animation="fadeInDown">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 v_align_m d_table_cell f_none">
+                <h5 class="second_font color_dark tt_uppercase fw_light d_inline_m m_bottom_4">Xiaomi</h5>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 t_align_r d_table_cell f_none">
+                <!--carousel navigation-->
+                <button class="button_type_1 black state_2 tr_all second_font fs_medium"> Xem tất cả</button>
+
+                <div class="clearfix d_inline_b">
+                    <button class="new_prev black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child m_right_5"><i class="fa fa-angle-left d_inline_m"></i></button>
+                    <button class="new_next black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child"><i class="fa fa-angle-right d_inline_m"></i></button>
+                </div>
+            </div>
+        </div>
+        <hr class="divider_bg m_bottom_15 animated hidden" data-animation="fadeInDown" data-animation-delay="100">
+        <div class="row">
+            <div class="owl-carousel" data-nav="new_" data-owl-carousel-options='{
+									"stagePadding" : 15,
+									"margin" : 30,
+									"responsive" : {
+											"0" : {
+												"items" : 1
+											},
+											"320" : {
+												"items" : 2
+											},
+											"550" : {
+												"items" : 3
+											},
+											"992" : {
+												"items" : 4
+											}
+										}
+									}'>
+                <!--owl item-->
+                @foreach (var item in Model)
+                {
+                    if (item.MaNSX == 3)
+                    {
+                        <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                            <!--product-->
+                            <figure class="relative r_image_container c_image_container qv_container">
+                                <div class="product_label fs_ex_small circle color_white bg_red t_align_c vc_child tt_uppercase"><i class="d_inline_m">Hot</i></div>
+                                <div class="d_block m_bottom_15 relative">
+                                    <img src="@item.HinhSP" alt="" class="c_image_1 tr_all">
+                                    <img src="@item.HinhSP" alt="" class="c_image_2 tr_all">
+                                    <a href="@Url.Action("ProductDetail", "Pages", new { @id = item.IdSP})" class="tr_all color_white second_font qv_style_button quick_view tt_uppercase t_align_c d_block clickable d_xs_none"><i class="fa fa-eye d_inline_m m_right_10"></i><span class="fs_medium">Chi tiết</span></a>
+                                </div>
+                                <figcaption class="t_align_c">
+                                    <ul>
+                                        <li><a href="@Url.Action("ProductDetail", "Pages", new { @id = item.IdSP})" class="second_font sc_hover"><b>@item.TenSP - @item.BoNho </b></a></li>
+                                        <li class="m_bottom_7"><p class="color_light  d_inline fs_small">Đánh giá</p></li>
+                                        <li>
+                                            <ul class="rating_list hr_list d_inline_b">
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li><i class="fa fa-star tr_all"></i></li>
+                                                <li><i class="fa fa-star tr_all"></i></li>
+                                            </ul>
+                                        </li>
+                                        <li class="m_bottom_16"><b class="fs_large second_font scheme_color">@String.Format("{0:0,0 ₫}", item.GiaSP.Value)</b></li>
+                                        @if (item.SLTon > 0)
+                                        {
+                                            if (kh != null)
+                                            {
+                                                <li>
+                                                    <div class="clearfix d_inline_b">
+                                                        <a href="@Url.Action("ThemGioHang", "Cart", new { @id = item.IdSP, @strURL = Request.Url.ToString() })">
+                                                            <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                                        </a>
+                                                    </div>
+
+                                                </li>
+
+                                            }
+                                            else
+                                            {
+                                                <li>
+                                                    <div class="clearfix d_inline_b">
+                                                        <a href="@Url.Action("Login", "User")">
+                                                            <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                                        </a>
+                                                    </div>
+
+                                                </li>
+
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <li>
+                                                <div class="clearfix d_inline_b">
+                                                    <a href="@Url.Action("ThemGioHang", "Cart", new { @id = item.IdSP, @strURL = Request.Url.ToString() })">
+                                                        <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        }
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    }
+                }
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--oppo products-->
+<div class="section_offset p_bottom_0 m_bottom_27">
+    <div class="container">
+        <div class="d_table m_bottom_5 w_full animated hidden" data-animation="fadeInDown">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 v_align_m d_table_cell f_none">
+                <h5 class="second_font color_dark tt_uppercase fw_light d_inline_m m_bottom_4">Oppo</h5>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 t_align_r d_table_cell f_none">
+                <!--carousel navigation-->
+                <button class="button_type_1 black state_2 tr_all second_font fs_medium"> Xem tất cả</button>
+
+                <div class="clearfix d_inline_b">
+                    <button class="new_prev black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child m_right_5"><i class="fa fa-angle-left d_inline_m"></i></button>
+                    <button class="new_next black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child"><i class="fa fa-angle-right d_inline_m"></i></button>
+                </div>
+            </div>
+        </div>
+        <hr class="divider_bg m_bottom_15 animated hidden" data-animation="fadeInDown" data-animation-delay="100">
+        <div class="row">
+            <div class="owl-carousel" data-nav="new_" data-owl-carousel-options='{
+									"stagePadding" : 15,
+									"margin" : 30,
+									"responsive" : {
+											"0" : {
+												"items" : 1
+											},
+											"320" : {
+												"items" : 2
+											},
+											"550" : {
+												"items" : 3
+											},
+											"992" : {
+												"items" : 4
+											}
+										}
+									}'>
+                <!--owl item-->
+                @foreach (var item in Model)
+                {
+                    if (item.MaNSX == 4)
+                    {
+                        <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                            <!--product-->
+                            <figure class="relative r_image_container c_image_container qv_container">
+                                <div class="product_label fs_ex_small circle color_white bg_red t_align_c vc_child tt_uppercase"><i class="d_inline_m">Hot</i></div>
+                                <div class="d_block m_bottom_15 relative">
+                                    <img src="@item.HinhSP" alt="" class="c_image_1 tr_all">
+                                    <img src="@item.HinhSP" alt="" class="c_image_2 tr_all">
+                                    <a href="@Url.Action("ProductDetail", "Pages", new { @id = item.IdSP})" class="tr_all color_white second_font qv_style_button quick_view tt_uppercase t_align_c d_block clickable d_xs_none"><i class="fa fa-eye d_inline_m m_right_10"></i><span class="fs_medium">Chi tiết</span></a>
+                                </div>
+                                <figcaption class="t_align_c">
+                                    <ul>
+                                        <li><a href="@Url.Action("ProductDetail", "Pages", new { @id = item.IdSP})" class="second_font sc_hover"><b>@item.TenSP - @item.BoNho </b></a></li>
+                                        <li class="m_bottom_7"><p class="color_light  d_inline fs_small">Đánh giá</p></li>
+                                        <li>
+                                            <ul class="rating_list hr_list d_inline_b">
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li><i class="fa fa-star tr_all"></i></li>
+                                                <li><i class="fa fa-star tr_all"></i></li>
+                                            </ul>
+                                        </li>
+                                        <li class="m_bottom_16"><b class="fs_large second_font scheme_color">@String.Format("{0:0,0 ₫}", item.GiaSP.Value)</b></li>
+                                        @if (item.SLTon > 0)
+                                        {
+                                            if (kh != null)
+                                            {
+                                                <li>
+                                                    <div class="clearfix d_inline_b">
+                                                        <a href="@Url.Action("ThemGioHang", "Cart", new { @id = item.IdSP, @strURL = Request.Url.ToString() })">
+                                                            <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                                        </a>
+                                                    </div>
+
+                                                </li>
+
+                                            }
+                                            else
+                                            {
+                                                <li>
+                                                    <div class="clearfix d_inline_b">
+                                                        <a href="@Url.Action("Login", "User")">
+                                                            <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                                        </a>
+                                                    </div>
+
+                                                </li>
+
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <li>
+                                                <div class="clearfix d_inline_b">
+                                                    <a href="@Url.Action("ThemGioHang", "Cart", new { @id = item.IdSP, @strURL = Request.Url.ToString() })">
+                                                        <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        }
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    }
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--vivo products-->
+<div class="section_offset p_bottom_0 m_bottom_27">
+    <div class="container">
+        <div class="d_table m_bottom_5 w_full animated hidden" data-animation="fadeInDown">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 v_align_m d_table_cell f_none">
+                <h5 class="second_font color_dark tt_uppercase fw_light d_inline_m m_bottom_4">Vivo</h5>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 t_align_r d_table_cell f_none">
+                <!--carousel navigation-->
+                <button class="button_type_1 black state_2 tr_all second_font fs_medium"> Xem tất cả</button>
+
+                <div class="clearfix d_inline_b">
+                    <button class="new_prev black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child m_right_5"><i class="fa fa-angle-left d_inline_m"></i></button>
+                    <button class="new_next black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child"><i class="fa fa-angle-right d_inline_m"></i></button>
+                </div>
+            </div>
+        </div>
+        <hr class="divider_bg m_bottom_15 animated hidden" data-animation="fadeInDown" data-animation-delay="100">
+        <div class="row">
+            <div class="owl-carousel" data-nav="new_" data-owl-carousel-options='{
+									"stagePadding" : 15,
+									"margin" : 30,
+									"responsive" : {
+											"0" : {
+												"items" : 1
+											},
+											"320" : {
+												"items" : 2
+											},
+											"550" : {
+												"items" : 3
+											},
+											"992" : {
+												"items" : 4
+											}
+										}
+									}'>
+                <!--owl item-->
+                @foreach (var item in Model)
+                {
+                    if (item.MaNSX == 5)
+                    {
+                        <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                            <!--product-->
+                            <figure class="relative r_image_container c_image_container qv_container">
+                                <div class="product_label fs_ex_small circle color_white bg_red t_align_c vc_child tt_uppercase"><i class="d_inline_m">Hot</i></div>
+                                <div class="d_block m_bottom_15 relative">
+                                    <img src="@item.HinhSP" alt="" class="c_image_1 tr_all">
+                                    <img src="@item.HinhSP" alt="" class="c_image_2 tr_all">
+                                    <a href="@Url.Action("ProductDetail", "Pages", new { @id = item.IdSP})" class="tr_all color_white second_font qv_style_button quick_view tt_uppercase t_align_c d_block clickable d_xs_none"><i class="fa fa-eye d_inline_m m_right_10"></i><span class="fs_medium">Chi tiết</span></a>
+                                </div>
+                                <figcaption class="t_align_c">
+                                    <ul>
+                                        <li><a href="@Url.Action("ProductDetail", "Pages", new { @id = item.IdSP})" class="second_font sc_hover"><b>@item.TenSP - @item.BoNho</b></a></li>
+                                        <li class="m_bottom_7"><p class="color_light  d_inline fs_small">Đánh giá</p></li>
+                                        <li>
+                                            <ul class="rating_list hr_list d_inline_b">
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li><i class="fa fa-star tr_all"></i></li>
+                                                <li><i class="fa fa-star tr_all"></i></li>
+                                            </ul>
+                                        </li>
+                                        <li class="m_bottom_16"><b class="fs_large second_font scheme_color">@String.Format("{0:0,0 ₫}", item.GiaSP.Value)</b></li>
+                                        @if (item.SLTon > 0)
+                                        {
+                                            if (kh != null)
+                                            {
+                                                <li>
+                                                    <div class="clearfix d_inline_b">
+                                                        <a href="@Url.Action("ThemGioHang", "Cart", new { @id = item.IdSP, @strURL = Request.Url.ToString() })">
+                                                            <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                                        </a>
+                                                    </div>
+
+                                                </li>
+
+                                            }
+                                            else
+                                            {
+                                                <li>
+                                                    <div class="clearfix d_inline_b">
+                                                        <a href="@Url.Action("Login", "User")">
+                                                            <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                                        </a>
+                                                    </div>
+
+                                                </li>
+
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <li>
+                                                <div class="clearfix d_inline_b">
+                                                    <a href="@Url.Action("ThemGioHang", "Cart", new { @id = item.IdSP, @strURL = Request.Url.ToString() })">
+                                                        <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        }
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    }
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--khac products-->
+<div class="section_offset p_bottom_0 m_bottom_27">
+    <div class="container">
+        <div class="d_table m_bottom_5 w_full animated hidden" data-animation="fadeInDown">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 v_align_m d_table_cell f_none">
+                <h5 class="second_font color_dark tt_uppercase fw_light d_inline_m m_bottom_4">Khác</h5>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 t_align_r d_table_cell f_none">
+                <!--carousel navigation-->
+                <button class="button_type_1 black state_2 tr_all second_font fs_medium"> Xem tất cả</button>
+
+                <div class="clearfix d_inline_b">
+                    <button class="new_prev black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child m_right_5"><i class="fa fa-angle-left d_inline_m"></i></button>
+                    <button class="new_next black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child"><i class="fa fa-angle-right d_inline_m"></i></button>
+                </div>
+            </div>
+        </div>
+        <hr class="divider_bg m_bottom_15 animated hidden" data-animation="fadeInDown" data-animation-delay="100">
+        <div class="row">
+            <div class="owl-carousel" data-nav="new_" data-owl-carousel-options='{
+									"stagePadding" : 15,
+									"margin" : 30,
+									"responsive" : {
+											"0" : {
+												"items" : 1
+											},
+											"320" : {
+												"items" : 2
+											},
+											"550" : {
+												"items" : 3
+											},
+											"992" : {
+												"items" : 4
+											}
+										}
+									}'>
+                <!--owl item-->
+                @foreach (var item in Model)
+                {
+                    if (item.MaNSX == 6 || item.MaNSX == 7)
+                    {
+                        <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                            <!--product-->
+                            <figure class="relative r_image_container c_image_container qv_container">
+                                <div class="product_label fs_ex_small circle color_white bg_red t_align_c vc_child tt_uppercase"><i class="d_inline_m">Hot</i></div>
+                                <div class="d_block m_bottom_15 relative">
+                                    <img src="@item.HinhSP" alt="" class="c_image_1 tr_all">
+                                    <img src="@item.HinhSP" alt="" class="c_image_2 tr_all">
+                                    <a href="@Url.Action("ProductDetail", "Pages", new { @id = item.IdSP})" class="tr_all color_white second_font qv_style_button quick_view tt_uppercase t_align_c d_block clickable d_xs_none"><i class="fa fa-eye d_inline_m m_right_10"></i><span class="fs_medium">Chi tiết</span></a>
+                                </div>
+                                <figcaption class="t_align_c">
+                                    <ul>
+                                        <li><a href="@Url.Action("ProductDetail", "Pages", new { @id = item.IdSP})" class="second_font sc_hover"><b>@item.TenSP - @item.BoNho</b></a></li>
+                                        <li class="m_bottom_7"><p class="color_light  d_inline fs_small">Đánh giá</p></li>
+                                        <li>
+                                            <ul class="rating_list hr_list d_inline_b">
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                                <li><i class="fa fa-star tr_all"></i></li>
+                                                <li><i class="fa fa-star tr_all"></i></li>
+                                            </ul>
+                                        </li>
+                                        <li class="m_bottom_16"><b class="fs_large second_font scheme_color">@String.Format("{0:0,0 ₫}", item.GiaSP.Value)</b></li>
+                                        @if (item.SLTon > 0)
+                                        {
+                                            if (kh != null)
+                                            {
+                                                <li>
+                                                    <div class="clearfix d_inline_b">
+                                                        <a href="@Url.Action("ThemGioHang", "Cart", new { @id = item.IdSP, @strURL = Request.Url.ToString() })">
+                                                            <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                                        </a>
+                                                    </div>
+
+                                                </li>
+
+                                            }
+                                            else
+                                            {
+                                                <li>
+                                                    <div class="clearfix d_inline_b">
+                                                        <a href="@Url.Action("Login", "User")">
+                                                            <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                                        </a>
+                                                    </div>
+
+                                                </li>
+
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <li>
+                                                <div class="clearfix d_inline_b">
+                                                    <a href="@Url.Action("ThemGioHang", "Cart", new { @id = item.IdSP, @strURL = Request.Url.ToString() })">
+                                                        <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        }
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    }
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--blog-->
+<div class="section_offset p_bottom_0 m_bottom_23">
+    <section class="container m_bottom_5">
+        <div class="d_table m_bottom_5 w_full animated hidden" data-animation="fadeInDown">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8 v_align_m d_table_cell f_none">
+                <h5 class="second_font color_dark tt_uppercase fw_light d_inline_m m_bottom_4">Bài viết mới</h5>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4 t_align_r d_table_cell f_none">
+                <!--carousel navigation-->
+                <div class="clearfix d_inline_b">
+                    <button class="blog_prev black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child m_right_5"><i class="fa fa-angle-left d_inline_m"></i></button>
+                    <button class="blog_next black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child"><i class="fa fa-angle-right d_inline_m"></i></button>
+                </div>
+            </div>
+        </div>
+        <hr class="divider_bg m_bottom_15 animated hidden" data-animation="fadeInDown" data-animation-delay="100">
+        <!--carousel-->
+        <div class="row">
+            <div class="owl-carousel" data-nav="blog_" data-owl-carousel-options='{
+							"stagePadding" : 15,
+							"margin" : 30,
+							"responsive" : {
+									"0" : {
+										"items" : 1
+									},
+									"470" : {
+										"items" : 2
+									},
+									"992" : {
+										"items" : 3
+									}
+								}
+							}'>
+                <!--post-->
+
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                    <article class="frame_container scale_image_container">
+                        <figure class="relative">
+                            <a class="d_block wrapper m_bottom_15"><img src="~/Content/product/tt1.jpeg " alt="" class="tr_all scale_image"></a>
+                            <figcaption>
+                                <div class="clearfix">
+                                    <!--post info (date & comments)-->
+                                    <div class="post_info f_left m_right_20 t_align_c lh_small m_sm_right_10">
+                                        <div class="date bg_scheme_color color_white second_font tt_uppercase m_bottom_15">
+                                            <b class="d_inline_b">2</b>
+                                            <p class="fs_ex_small">Jun</p>
+                                        </div>
+                                        <a class="sc_hover"><i class="fa fa-comments d_inline_m m_right_3"></i> <span class="fs_small d_inline_m">3</span></a>
+                                    </div>
+                                    <!--post excerpt-->
+                                    <div class="f_left post_excerpt m_bottom_15">
+                                        <h5 class="second_font m_bottom_13"><a href="#" class="sc_hover"><b>Galaxy S23 chưa ra mắt, Galaxy S24 đã được tiết lộ có công nghệ khủng này</b></a></h5>
+                                        <p class="fw_light">Thời gian qua, chúng ta đã được nhìn thấy khá nhiều thông tin rò rỉ về dòng Galaxy S23 của Samsung.</p>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <!--post-->
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="350">
+                    <article class="frame_container scale_image_container">
+                        <figure class="relative">
+                            <a class="d_block wrapper m_bottom_15"><img src="~/Content/product/tt2.jpg" alt="" class="tr_all scale_image"></a>
+                            <figcaption>
+                                <div class="clearfix">
+                                    <!--post info (date & comments)-->
+                                    <div class="post_info f_left m_right_20 t_align_c lh_small m_sm_right_10">
+                                        <div class="date bg_scheme_color color_white second_font tt_uppercase m_bottom_15">
+                                            <b class="d_inline_b">3</b>
+                                            <p class="fs_ex_small">Jun</p>
+                                        </div>
+                                        <a class="sc_hover"><i class="fa fa-comments d_inline_m m_right_3"></i> <span class="fs_small d_inline_m">77</span></a>
+                                    </div>
+                                    <!--post excerpt-->
+                                    <div class="f_left post_excerpt m_bottom_15">
+                                        <h5 class="second_font m_bottom_13"><a href="#" class="sc_hover"><b>Tất tần tật thông tin chúng ta đã biết về Xiaomi 13 series: Thiết kế, cấu hình, giá bán và ngày ra mắt</b></a></h5>
+                                        <p class="fw_light">Xiaomi đang chuẩn bị ra mắt các mẫu smartphone cao cấp mới của mình, thuộc dòng Xiaomi 13. </p>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <!--post-->
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="500">
+                    <article class="frame_container scale_image_container">
+                        <figure class="relative">
+                            <a class="d_block wrapper m_bottom_15"><img src="~/Content/product/tt3.jpeg" alt="" class="tr_all scale_image"></a>
+                            <figcaption>
+                                <div class="clearfix">
+                                    <!--post info (date & comments)-->
+                                    <div class="post_info f_left m_right_20 t_align_c lh_small m_sm_right_10">
+                                        <div class="date bg_scheme_color color_white second_font tt_uppercase m_bottom_15">
+                                            <b class="d_inline_b">4</b>
+                                            <p class="fs_ex_small">Jun</p>
+                                        </div>
+                                        <a class="sc_hover"><i class="fa fa-comments d_inline_m m_right_3"></i> <span class="fs_small d_inline_m">0</span></a>
+                                    </div>
+                                    <!--post excerpt-->
+                                    <div class="f_left post_excerpt m_bottom_15">
+                                        <h5 class="second_font m_bottom_13"><a href="#" class="sc_hover"><b>“iPhone 14” là từ khóa được tìm kiếm nhiều thứ 8 toàn cầu trên Google vào năm 2022</b></a></h5>
+                                        <p class="fw_light">Theo thông tin được chia sẻ từ trang Macrumors, “iPhone 14” là từ khóa được tìm kiếm nhiều thứ 8 trên toàn thế giới từ Google vào năm 2022.</p>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <!--post-->
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="650">
+                    <article class="frame_container scale_image_container">
+                        <figure class="relative">
+                            <a class="d_block wrapper m_bottom_15"><img src="~/Content/product/tt4.jpeg" alt="" class="tr_all scale_image"></a>
+                            <figcaption>
+
+                                <div class="clearfix">
+                                    <!--post info (date & comments)-->
+                                    <div class="post_info f_left m_right_20 t_align_c lh_small m_sm_right_10">
+                                        <div class="date bg_scheme_color color_white second_font tt_uppercase m_bottom_15">
+                                            <b class="d_inline_b">5</b>
+                                            <p class="fs_ex_small">Jun</p>
+                                        </div>
+                                        <a class="sc_hover"><i class="fa fa-comments d_inline_m m_right_3"></i> <span class="fs_small d_inline_m">3</span></a>
+                                    </div>
+                                    <!--post excerpt-->
+                                    <div class="f_left post_excerpt m_bottom_15">
+                                        <h5 class="second_font m_bottom_13"><a href="#" class="sc_hover"><b>Đây là bảng thông số kỹ thuật chi tiết của OPPO Find N2 Flip</b></a></h5>
+                                        <p class="fw_light">Find N2 Flip dự kiến sẽ là mẫu điện thoại màn hình gập dọc đầu tiên của OPPO. Smartphone này được cho là sẽ xuất hiện cùng với Find N2 vào ngày 15/12 tới.</p>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <!--post-->
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="800">
+                    <article class="frame_container scale_image_container">
+                        <figure class="relative">
+                            <a class="d_block wrapper m_bottom_15"><img src="~/Content/product/tt5.jpeg" alt="" class="tr_all scale_image"></a>
+                            <figcaption>
+
+                                <div class="clearfix">
+                                    <!--post info (date & comments)-->
+                                    <div class="post_info f_left m_right_20 t_align_c lh_small m_sm_right_10">
+                                        <div class="date bg_scheme_color color_white second_font tt_uppercase m_bottom_15">
+                                            <b class="d_inline_b">6</b>
+                                            <p class="fs_ex_small">Jun</p>
+                                        </div>
+                                        <a class="sc_hover"><i class="fa fa-comments d_inline_m m_right_3"></i> <span class="fs_small d_inline_m">77</span></a>
+                                    </div>
+                                    <!--post excerpt-->
+                                    <div class="f_left post_excerpt m_bottom_15">
+                                        <h5 class="second_font m_bottom_13"><a href="#" class="sc_hover"><b>Vivo Y35 5G ra mắt với chip Dimensity 700, pin 5000 mAh</b></a></h5>
+                                        <p class="fw_light">Vivo hôm nay vừa âm thầm ra mắt một chiếc điện thoại giá rẻ mới của hãng, có tên gọi là Vivo Y35 5G.</p>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <!--post-->
+                <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="950">
+                    <article class="frame_container scale_image_container">
+                        <figure class="relative">
+                            <a class="d_block wrapper m_bottom_15"><img src="~/Content/product/tt6.jpg" alt="" class="tr_all scale_image"></a>
+                            <figcaption>
+
+                                <div class="clearfix">
+                                    <!--post info (date & comments)-->
+                                    <div class="post_info f_left m_right_20 t_align_c lh_small m_sm_right_10">
+                                        <div class="date bg_scheme_color color_white second_font tt_uppercase m_bottom_15">
+                                            <b class="d_inline_b">7</b>
+                                            <p class="fs_ex_small">Jun</p>
+                                        </div>
+                                        <a class="sc_hover"><i class="fa fa-comments d_inline_m m_right_3"></i> <span class="fs_small d_inline_m">0</span></a>
+                                    </div>
+                                    <!--post excerpt-->
+                                    <div class="f_left post_excerpt m_bottom_15">
+                                        <h5 class="second_font m_bottom_13"><a href="#" class="sc_hover"><b>Đánh giá Tecno POVA 4 Pro: Tốt gỗ tốt cả nước sơn, gaming phone giá rẻ mà “lạ” lắm!</b></a></h5>
+                                        <p class="fw_light">Tecno POVA 4 Pro là mẫu smartphone gaming giá rẻ có thiết kế vô cùng độc đáo, chip Helio G99 chiến game khỏe, pin trâu 6000mAh cùng với mức giá vô cùng dễ chịu.</p>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+

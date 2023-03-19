@@ -1,0 +1,82 @@
+﻿@model IEnumerable<DACN.Models.NSX>
+
+@{
+    ViewBag.Title = "ListBrand";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+
+    <!-- Main Content -->
+    <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+            <h5 class="m-0 font-weight-bold text-primary" style="position:relative; left:45%">Thông tin sản phẩm</h5>
+        </nav>
+        <!-- End of Topbar -->
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+            <!-- DataTales Example -->
+            <div class="card shadow mb-4">
+                
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead style="text-align:center">
+                                <tr>
+                                    <th>Mã Nhà sản xuất</th>
+                                    <th>Tên Nhà sản xuất</th>
+                                    <th>Logo</th>
+                                    <th>Tùy chọn</th>
+                                </tr>
+                            </thead>
+                            <tfoot style="text-align:center">
+                                <tr>
+                                    <th>Mã Nhà sản xuất</th>
+                                    <th>Tên Nhà sản xuất</th>
+                                    <th>Logo</th>
+                                    <th>Tùy chọn</th>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.MaNSX</td>
+                                        <td>@item.TenNSX</td>
+                                        <td style="text-align:center; width: 300px"><img src="@item.Logo" width="150px" height="70px" /></td>
+                                        <td width="150px" style="text-align:center">
+
+                                            <a href="@Url.Action("EditBrand", "Admin", new { @id = item.MaNSX})" class="btn btn-success btn-sm btn-sm" style="width:50px" title="Chi tiết">
+                                                <i class="fas fa-info-circle"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- End of Main Content -->
+    <!-- Footer -->
+    <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+                <span></span>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+</div>
+<!-- End of Content Wrapper -->
+

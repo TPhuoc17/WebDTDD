@@ -1,0 +1,422 @@
+﻿@model DACN.Models.SANPHAM
+@using DACN.Models
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+    TAIKHOAN kh = (TAIKHOAN)Session["TaiKhoan"];
+}
+
+<head>
+    <![endif]-->
+    <script src="~/Content/template/js/jquery-2.1.1.min.js"></script>
+    <script src="~/Content/template/js/modernizr.js"></script>
+
+    <!--libs include-->
+    <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5306f8f674bfda4c"></script>
+    <script src="~/Content/template/plugins/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="~/Content/template/plugins/jquery.elevateZoom-3.0.8.min.js"></script>
+    <script src="~/Content/template/plugins/jquery.appear.js"></script>
+    <script src="~/Content/template/plugins/jquery.easytabs.min.js"></script>
+    <script src="~/Content/template/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="~/Content/template/plugins/twitter/jquery.tweet.min.js"></script>
+    <script src="~/Content/template/plugins/flickr.js"></script>
+    <script src="~/Content/template/plugins/afterresize.min.js"></script>
+    <script src="~/Content/template/plugins/jackbox/js/jackbox-packed.min.js"></script>
+    <script src="~/Content/template/js/retina.min.js"></script>
+    <script src="~/Content/template/plugins/colorpicker/colorpicker.js"></script>
+    <script src="~/Content/template/js/styleswitcher.js"></script>
+
+    <!--theme initializer-->
+    <script src="~/Content/template/js/themeCore.js"></script>
+    <script src="~/Content/template/js/theme.js"></script>
+</head>
+
+<title>@Model.TenSP</title>
+
+
+<div class="breadcrumbs bg_grey_light_2 fs_medium fw_light">
+    <div class="container">
+        <a href="@Url.Action("HomePage", "Pages")" class="sc_hover">Trang chủ</a> <span class="color_dark">/</span> <a class="sc_hover">@Model.NSX.TenNSX</a> <span class="color_dark">/</span> <a class="sc_hover">@Model.TenSP</a>
+    </div>
+</div>
+
+<!--main content-->
+<div class="page_section_offset">
+    <div class="container">
+        <section>
+            <main class="clearfix m_xs_bottom_30">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 m_bottom_20 m_xs_bottom_15">
+                        <div class="wrapper">
+                            <div class="d_block relative r_image_container">
+                                <img id="zoom" src="@Model.HinhSP">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 m_bottom_20">
+                        <div class="wrapper">
+                            <h3 class="second_font m_bottom_3 f_left product_title"><a href="#" class="sc_hover">@Model.TenSP</a></h3>
+
+                        </div>
+                        <!--danh gia-->
+                        <div class="relative m_bottom_18">
+                            <ul class="rating_list wrapper hr_list d_inline_m tr_all m_right_5">
+                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                <li><i class="fa fa-star tr_all"></i></li>
+                                <li><i class="fa fa-star tr_all"></i></li>
+                            </ul>
+                            <span class="color_light d_inline_m m_top_2">
+                                <a href="#" class="sc_hover fs_medium fw_light">3 Đánh giá</a> | <a href="#" class="color_dark sc_hover fs_medium fw_light">Thêm đánh giá của bạn</a>
+                            </span>
+                        </div>
+
+                        <div class="product_options m_bottom_20">
+                            <b class="second_font d_block m_bottom_10">Tùy chọn khác</b>
+                            <ul class="m_bottom_14">
+                                <li class="m_bottom_3"><span class="project_list_title second_font d_inline_b">Màn hình: </span> <span class="color_dark">@Model.ManHinh</span></li>
+                                <li class="m_bottom_3"><span class="project_list_title second_font d_inline_b">Bộ nhớ: </span> <span class="color_dark fw_light">@Model.BoNho </span></li>
+                                <li class="m_bottom_3"><span class="project_list_title second_font d_inline_b">Chip xử lý: </span> <span class="color_dark fw_light">@Model.ViXuLy</span></li>
+                            </ul>
+                            <p class="second_font m_bottom_3">Ram:</p>
+                            <div class="styled_select size_select relative m_bottom_15">
+                                <div class="select_title type_2 fs_medium fw_light color_light relative d_none tr_all">@Model.BoNho</div>
+                                <select>
+                                    <option value="Queen">128 </option>
+                                    <option value="King">256 </option>
+                                    <option value="Grand">512 </option>
+                                </select>
+                                <ul class="options_list d_none tr_all hidden bg_grey_light_2"></ul>
+                            </div>
+                            <p class="second_font">Số lượng: @Model.SLTon</p>
+
+                            <hr class="divider_light">
+                            <footer class="bg_grey_light_2">
+                                <div class="fs_big second_font m_bottom_17"><span class="color_light" style="font-size:medium">Giá: </span> <b class="scheme_color">@String.Format("{0:0,0 ₫}", Model.GiaSP.Value)</b></div>
+                                <div class="clearfix">
+                                    <div class="quantity clearfix t_align_c f_left f_md_none m_right_10 m_md_bottom_3">
+                                        <button class="f_left d_block minus black_hover tr_all bg_white">-</button>
+                                        <input type="text" value="1" name="" readonly="" class="f_left color_light">
+                                        <button class="f_left d_block black_hover tr_all bg_white">+</button>
+                                    </div>
+                                    <br class="d_md_block d_none">
+                                    
+                                    @if (Model.SLTon > 0)
+                                    {
+                                        if (kh != null)
+                                        {
+                                            <a href="@Url.Action("ThemGioHang", "Cart", new { @id = Model.IdSP, @strURL = Request.Url.ToString() })" class="button_type_2 d_block f_sm_none m_sm_bottom_3 t_align_c lbrown state_2 tr_all second_font fs_medium tt_uppercase f_left m_right_3 product_button"><i class="fa fa-shopping-cart d_inline_m m_right_9"></i>Thêm vào giỏ hàng</a>
+                                        }
+                                        else
+                                        {
+                                            <a href="@Url.Action("Login", "User")" class="button_type_2 d_block f_sm_none m_sm_bottom_3 t_align_c lbrown state_2 tr_all second_font fs_medium tt_uppercase f_left m_right_3 product_button"><i class="fa fa-shopping-cart d_inline_m m_right_9"></i>Thêm vào giỏ hàng</a>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <a href="@Url.Action("ThemGioHang", "Cart", new { @id = Model.IdSP, @strURL = Request.Url.ToString() })" class="button_type_2 d_block f_sm_none m_sm_bottom_3 t_align_c lbrown state_2 tr_all second_font fs_medium tt_uppercase f_left m_right_3 product_button"><i class="fa fa-shopping-cart d_inline_m m_right_9"></i> Hết hàng</a>
+                                    }
+                                </div>
+                            </footer>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+            <!--tabs-->
+            <div class="tabs styled_tabs m_bottom_18 m_top_10">
+                <nav class="second_font">
+                    <ul class="hr_list">
+                        <li class="m_right_3"><a href="#tab1" class="color_light border_light_3 d_block">Mô tả</a></li>
+                        <li class="m_right_3"><a href="#tab3" class="color_light border_light_3 d_block">Đánh giá</a></li>
+                        <li class="m_right_3"><a href="#tab4" class="color_light border_light_3 d_block">Bình luận</a></li>
+                    </ul>
+                </nav>
+                <hr class="d_xs_none">
+                <div id="tab1" class="fw_light tab_content">
+                    <p class="m_bottom_13">@Model.MoTaSP</p>
+                </div>
+
+                <div id="tab3" class="tab_content">
+                    <div class="m_bottom_20">
+                        <div class="m_bottom_12 clearfix">
+                            <div class="f_left lh_small  f_xs_none">
+                                <a href="#" class="second_font color_default sc_hover d_inline_b v_align_b">Linh,</a> <span class="color_light fs_medium d_inline_b v_align_b fw_light">8 8 2022</span>
+                            </div>
+                            <div class="f_right f_xs_none">
+                                <ul class="rating_list wrapper hr_list tr_all">
+                                    <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                    <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                    <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                    <li><i class="fa fa-star tr_all"></i></li>
+                                    <li><i class="fa fa-star tr_all"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="fw_light">Sản phẩm dùng rất tốt. Chụp hình siêu đẹp và sắc nét luôn. Giả cả hợp lý</p>
+                    </div>
+                    <hr class="divider_light m_bottom_20">
+                    <div class="m_bottom_20">
+                        <div class="m_bottom_12 clearfix">
+                            <div class="f_left lh_small  f_xs_none">
+                                <a href="#" class="second_font color_default sc_hover d_inline_b v_align_b">Thành,</a> <span class="color_light fs_medium d_inline_b v_align_b fw_light">18 7 2022</span>
+                            </div>
+                            <div class="f_right f_xs_none">
+                                <ul class="rating_list wrapper hr_list tr_all">
+                                    <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                    <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                    <li><i class="fa fa-star tr_all"></i></li>
+                                    <li><i class="fa fa-star tr_all"></i></li>
+                                    <li><i class="fa fa-star tr_all"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="fw_light">Pin dung lượng khủng, sạc kép nhanh và sạc hai chiều tiện lợi là ba tính năng mang lại trải nghiệm tiện lợi cho người dùng.</p>
+                    </div>
+                    <hr class="divider_light m_bottom_23">
+                    <div class="m_bottom_30">
+                        <div class="m_bottom_12 clearfix">
+                            <div class="f_left lh_small  f_xs_none">
+                                <a href="#" class="second_font color_default sc_hover d_inline_b v_align_b">Chí,</a> <span class="color_light fs_medium d_inline_b v_align_b fw_light">27 9 2022</span>
+                            </div>
+                            <div class="f_right f_xs_none">
+                                <ul class="rating_list wrapper hr_list tr_all">
+                                    <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                    <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                    <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                    <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                    <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="fw_light">Thay thế cho thiết kế vuông vức quen thuộc, OPPO Reno9 Pro sở hữu những đường cong bo góc mềm mại với độ hoàn thiện cao tạo cảm giác cầm nắm thoải mái. Kiểu dáng mỏng nhẹ, tinh giản gợi cho người dùng liên tưởng đến hình ảnh một chiếc smartphone vừa sang trọng, vừa trẻ trung.</p>
+                    </div>
+                    <h5 class="second_font color_dark tt_uppercase fw_light d_inline_m m_bottom_23">Đánh giá của bạn</h5>
+                    <form>
+                        <ul>
+                            <li class="clearfix">
+                                <div class="f_left m_top_2">
+                                    <label class="second_font required clickable d_inline_m m_right_5">Đánh giá</label>
+                                    <ul class="rating_list wrapper hr_list tr_all d_inline_m">
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                    </ul>
+                                </div>
+                                
+                                <button type="submit" class="button_type_2 d_block t_align_c black state_2 tr_all second_font fs_medium tt_uppercase f_right"><span class="d_inline_b m_left_10 m_right_10">Gửi</span></button>
+                            </li>
+                            <li class="m_bottom_9">
+                                <label for="review" class="second_font required clickable d_inline_b m_bottom_5">Viết đánh giá</label><br>
+                                <textarea class="tr_all w_full fw_light fs_medium color_light" id="review" name="nhanxet" rows="5"></textarea>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div id="tab4" class="fw_light tab_content">
+                    <div class="iframe_video_container">
+                        <div class="m_bottom_20">
+                            <div class="m_bottom_12 clearfix">
+                                <div class="f_left lh_small  f_xs_none">
+                                    <a href="#" class="second_font color_default sc_hover d_inline_b v_align_b">Mỹ,</a> <span class="color_light fs_medium d_inline_b v_align_b fw_light">2 10 2022</span>
+                                </div>
+                                <div class="f_right f_xs_none">
+                                    <ul class="rating_list wrapper hr_list tr_all">
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                        <li><i class="fa fa-star tr_all"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="fw_light">Redmi Note 12 Pro Explorer sở hữu vẻ ngoài vuông vức với các cạnh viền được bo cong tỉ mỉ cùng kích thước nhỏ gọn. Qua đó, máy tạo cảm giác thoải mái, vừa tay cho người dùng khi cầm nắm.</p>
+                        </div>
+                    </div>
+                    <form>
+                        <ul>
+
+                            <li class="m_bottom_1">
+                                <label for="review" class="second_font required clickable d_inline_b m_bottom_5">Viết bình luận</label><br>
+                                <textarea class="tr_all w_full fw_light fs_medium color_light" id="review" name="" rows="5"></textarea>
+                            </li>
+
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <div class="d_table m_bottom_5 w_full">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8 v_align_m d_table_cell f_none">
+                    <h5 class="second_font color_dark tt_uppercase fw_light d_inline_m m_bottom_4">Sản phẩm nổi bật</h5>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4 t_align_r d_table_cell f_none">
+                    <!--carousel navigation-->
+                    <div class="clearfix d_inline_b">
+                        <button class="rp_prev black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child m_right_5"><i class="fa fa-angle-left d_inline_m"></i></button>
+                        <button class="rp_next black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child"><i class="fa fa-angle-right d_inline_m"></i></button>
+                    </div>
+                </div>
+            </div>
+            <hr class="divider_bg m_bottom_15">
+            <div class="row">
+                <!--carousel-->
+                <div class="owl-carousel m_bottom_20 m_xs_bottom_0" data-nav="rp_" data-owl-carousel-options='{
+								"stagePadding" : 15,
+								"margin" : 30,
+								"responsive" : {
+										"0" : {
+											"items" : 1
+										},
+										"321" : {
+											"items" : 2
+										},
+										"768" : {
+											"items" : 3
+										},
+										"992" : {
+											"items" : 4
+										}
+									}
+								}'>
+
+                    <!--owl item-->
+                    <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                        <!--product-->
+                        <figure class="relative r_image_container c_image_container qv_container">
+                            <div class="product_label fs_ex_small circle color_white bg_red t_align_c vc_child tt_uppercase"><i class="d_inline_m">Hot</i></div>
+                            <div class="d_block m_bottom_15 relative">
+                                <img src="~/Content/product/Ip14PM_1.png" alt="" class="c_image_1 tr_all">
+                                <img src="~/Content/product/Ip14PM_1.png" alt="" class="c_image_2 tr_all">
+                                <a data-popup="#quick_view" data-popup-transition-in="bounceInUp" data-popup-transition-out="bounceOutUp" class="tr_all color_white second_font qv_style_button quick_view tt_uppercase t_align_c d_block clickable d_xs_none"><i class="fa fa-eye d_inline_m m_right_10"></i><span class="fs_medium">Xem nhanh</span></a>
+                            </div>
+                            <figcaption class="t_align_c">
+                                <ul>
+                                    <li><a href="#" class="second_font sc_hover"><b>IPhone 14 Pro Max - 128GB </b></a></li>
+                                    <li class="m_bottom_7"><p class="color_light  d_inline fs_small">Đánh giá</p></li>
+                                    <li>
+                                        <ul class="rating_list hr_list d_inline_b">
+                                            <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                            <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                            <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                            <li><i class="fa fa-star tr_all"></i></li>
+                                            <li><i class="fa fa-star tr_all"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li class="m_bottom_16"><b class="fs_large second_font scheme_color">34.990.000 ₫</b></li>
+                                    <li>
+                                        <div class="clearfix d_inline_b">
+                                            <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!--owl item-->
+                    <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                        <!--product-->
+                        <figure class="relative r_image_container c_image_container qv_container">
+                            <div class="product_label fs_ex_small circle color_white bg_red t_align_c vc_child tt_uppercase"><i class="d_inline_m">Hot</i></div>
+                            <div class="d_block m_bottom_15 relative">
+                                <img src="~/Content/product/galaxys22ultra.png" alt="" class="c_image_1 tr_all">
+                                <img src="~/Content/product/galaxys22ultra.png" alt="" class="c_image_2 tr_all">
+                                <a data-popup="#quick_view" data-popup-transition-in="bounceInUp" data-popup-transition-out="bounceOutUp" class="tr_all color_white second_font qv_style_button quick_view tt_uppercase t_align_c d_block clickable d_xs_none"><i class="fa fa-eye d_inline_m m_right_10"></i><span class="fs_medium">Xem nhanh</span></a>
+                            </div>
+                            <figcaption class="t_align_c">
+                                <ul>
+                                    <li><a href="#" class="second_font sc_hover"><b>Samsung Galaxy S22 Ultra - 128Gb </b></a></li>
+                                    <li class="m_bottom_7"><p class="color_light  d_inline fs_small">Đánh giá</p></li>
+                                    <li>
+                                        <ul class="rating_list hr_list d_inline_b">
+                                            <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                            <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                            <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                            <li><i class="fa fa-star tr_all"></i></li>
+                                            <li><i class="fa fa-star tr_all"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li class="m_bottom_16"><b class="fs_large second_font scheme_color">24.790.000 ₫</b></li>
+                                    <li>
+                                        <div class="clearfix d_inline_b">
+                                            <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!--owl item-->
+                    <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                        <!--product-->
+                        <figure class="relative r_image_container c_image_container qv_container">
+                            <div class="product_label fs_ex_small circle color_white bg_red t_align_c vc_child tt_uppercase"><i class="d_inline_m">Hot</i></div>
+                            <div class="d_block m_bottom_15 relative">
+                                <img src="~/Content/product/xiaomi12TPro.png" alt="" class="c_image_1 tr_all">
+                                <img src="~/Content/product/xiaomi12TPro.png" alt="" class="c_image_2 tr_all">
+                                <a data-popup="#quick_view" data-popup-transition-in="bounceInUp" data-popup-transition-out="bounceOutUp" class="tr_all color_white second_font qv_style_button quick_view tt_uppercase t_align_c d_block clickable d_xs_none"><i class="fa fa-eye d_inline_m m_right_10"></i><span class="fs_medium">Xem nhanh</span></a>
+                            </div>
+                            <figcaption class="t_align_c">
+                                <ul>
+                                    <li><a href="#" class="second_font sc_hover"><b>Xiaomi 12T Pro - 128GB </b></a></li>
+                                    <li class="m_bottom_7"><p class="color_light  d_inline fs_small">Đánh giá</p></li>
+                                    <li>
+                                        <ul class="rating_list hr_list d_inline_b">
+                                            <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                            <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                            <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                            <li><i class="fa fa-star tr_all"></i></li>
+                                            <li><i class="fa fa-star tr_all"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li class="m_bottom_16"><b class="fs_large second_font scheme_color">16.590.000 ₫</b></li>
+                                    <li>
+                                        <div class="clearfix d_inline_b">
+                                            <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!--owl item-->
+                    <div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
+                        <!--product-->
+                        <figure class="relative r_image_container c_image_container qv_container">
+                            <div class="product_label fs_ex_small circle color_white bg_red t_align_c vc_child tt_uppercase"><i class="d_inline_m">Hot</i></div>
+                            <div class="d_block m_bottom_15 relative">
+                                <img src="~/Content/product/rogphone6.png" alt="" class="c_image_1 tr_all">
+                                <img src="~/Content/product/rogphone6.png" alt="" class="c_image_2 tr_all">
+                                <a data-popup="#quick_view" data-popup-transition-in="bounceInUp" data-popup-transition-out="bounceOutUp" class="tr_all color_white second_font qv_style_button quick_view tt_uppercase t_align_c d_block clickable d_xs_none"><i class="fa fa-eye d_inline_m m_right_10"></i><span class="fs_medium">Xem nhanh</span></a>
+                            </div>
+                            <figcaption class="t_align_c">
+                                <ul>
+                                    <li><a href="#" class="second_font sc_hover"><b>ASUS ROG Phone 6 - 128GB </b></a></li>
+                                    <li class="m_bottom_7"><p class="color_light  d_inline fs_small">Đánh giá</p></li>
+                                    <li>
+                                        <ul class="rating_list hr_list d_inline_b">
+                                            <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                            <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                            <li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+                                            <li><i class="fa fa-star tr_all"></i></li>
+                                            <li><i class="fa fa-star tr_all"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li class="m_bottom_16"><b class="fs_large second_font scheme_color">24.990.000 ₫</b></li>
+                                    <li>
+                                        <div class="clearfix d_inline_b">
+                                            <button class="button_type_2 lbrown state_2 tr_all second_font fs_medium">&ensp;THÊM VÀO GIỎ HÀNG <i class="fa fa-shopping-cart fs_large d_inline_m">&emsp;</i></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
